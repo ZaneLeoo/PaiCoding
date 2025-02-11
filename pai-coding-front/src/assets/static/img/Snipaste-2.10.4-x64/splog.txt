@@ -1,0 +1,1231 @@
+[2025-01-23 14:54:20.676] [I] ***************************************************************
+[2025-01-23 14:54:20.676] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-23 14:54:20.676] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-23 14:54:20.676] [I] Cores: 16
+[2025-01-23 14:54:20.676] [I] Elevated: false
+[2025-01-23 14:54:20.676] [I] Log level: 2
+[2025-01-23 14:54:20.676] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-23 14:54:20.676] [I] Working dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-23 14:54:20.676] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-23 14:54:20.676] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-23 14:54:20.676] [I] Screen scale: 1
+[2025-01-23 14:54:20.676] [I] Retina factor: 1
+[2025-01-23 14:54:20.676] [I] Screens: 1
+[2025-01-23 14:54:20.676] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-23 14:54:20.685] [I] Desktops: 1
+[2025-01-23 14:54:20.685] [I] Compatability layer: DetectorsAppHealth
+[2025-01-23 14:54:20.685] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-23 14:54:20.687] [I] Settings imported
+[2025-01-23 14:54:20.688] [I] Breakpad initialized
+[2025-01-23 14:54:20.864] [I] OpenGL acceleration: true
+[2025-01-23 14:54:20.907] [I] Process priority: 1
+[2025-01-23 14:54:20.907] [I] Initializing Snipaste...
+[2025-01-23 14:54:21.199] [I] Prefetch...
+[2025-01-23 14:54:21.237] [I] Preloaded 28 files: 36 ms
+[2025-01-23 14:54:22.282] [I] Load default ssl configuration: 1080 ms
+[2025-01-23 14:54:22.354] [I] About to apply settings...
+[2025-01-23 14:54:22.361] [I] Settings applied
+[2025-01-23 14:54:22.370] [I] Log level set to: 2
+[2025-01-23 14:54:22.396] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-23 14:54:22.397] [W] Failed to open history file "C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history/.sp0" for reading
+[2025-01-23 14:54:22.397] [I] Add group
+[2025-01-23 14:54:22.399] [I] Request to switch to group 0
+[2025-01-23 14:54:22.422] [I] About to restore pasters...
+[2025-01-23 14:54:22.422] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-23 14:54:22.422] [I] Record version: 201
+[2025-01-23 14:54:22.422] [I] To restore: 0
+[2025-01-23 14:54:22.422] [I] Pasters touched
+[2025-01-23 14:54:22.422] [I] All pasters activated: true
+[2025-01-23 14:54:22.423] [I] Snipper: hide
+[2025-01-23 14:54:22.424] [I] Unref images: 0 (0 removed)
+[2025-01-23 14:54:22.424] [I] Unref dirs: 0 (0 removed)
+[2025-01-23 14:54:22.424] [I] Empty history info files: 0 (0 removed)
+[2025-01-23 14:54:22.424] [I] Pasters restored
+[2025-01-23 14:54:22.425] [I] Launch time: 1749 ms
+[2025-01-23 14:54:27.335] [I] Parsing command arguments [1]: (sp, show-tray-menu)
+[2025-01-23 14:55:03.736] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-23 14:55:03.736] [I] Snip request: 0 (dest: 0)
+[2025-01-23 14:55:03.736] [I] Snipper: preparing...
+[2025-01-23 14:55:03.736] [I] Desktop: QRect(0, 0, 2560 x 1440)
+[2025-01-23 14:55:03.768] [I] Background size: QSize(2560, 1440)
+[2025-01-23 14:55:03.768] [I] Screens: 1
+[2025-01-23 14:55:03.768] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-23 14:55:03.779] [I] Focus set
+[2025-01-23 14:55:03.780] [I] Snipper: preparation done (0)
+[2025-01-23 14:55:03.780] [I] Snipper: about to appear...
+[2025-01-23 14:55:03.780] [I] Snipper: hide
+[2025-01-23 14:55:03.780] [I] Snipper: prepare to show...
+[2025-01-23 14:55:03.782] [I] Snipper: shown
+[2025-01-23 14:55:03.783] [I] Snipper: focus in
+[2025-01-23 14:55:03.783] [I] Snipper: ready [0.046 s]
+[2025-01-23 14:55:05.727] [I] Screenshot (1569, 1101, 562 x 141) destination: pin, 
+[2025-01-23 14:55:05.727] [I] Paste image: QPoint(1569, 1101)
+[2025-01-23 14:55:05.748] [I] Screenshot successfully saved: pin, 
+[2025-01-23 14:55:05.748] [I] Snipper: about to quit...
+[2025-01-23 14:55:05.784] [I] Snipper: focus out [3] (Foreground window: Paster - Snipaste)
+[2025-01-23 14:55:05.790] [I] Snipper: hide
+[2025-01-23 14:55:05.790] [I] Snipper: hidden
+[2025-01-23 14:55:05.791] [I] Snipper: quit
+[2025-01-23 14:55:05.885] [I] Snipper: scene saved
+[2025-01-23 15:02:07.400] [I] Preloaded 28 files: 7 ms [every 7.8 m]
+[2025-01-23 15:11:48.410] [I] Preloaded 28 files: 6 ms [every 9.7 m]
+[2025-01-23 15:23:55.431] [I] Preloaded 28 files: 7 ms [every 12.1 m]
+[2025-01-23 15:39:03.434] [I] Preloaded 28 files: 6 ms [every 15.1 m]
+[2025-01-23 15:40:09.284] [I] Silent feed checking finished
+[2025-01-23 15:40:09.284] [I] No available update
+[2025-01-23 15:44:40.595] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-23 15:44:40.595] [I] Snip request: 0 (dest: 0)
+[2025-01-23 15:44:40.595] [I] Snipper: preparing...
+[2025-01-23 15:44:40.595] [I] Desktop: QRect(0, 0, 2560 x 1440)
+[2025-01-23 15:44:40.636] [I] Background size: QSize(2560, 1440)
+[2025-01-23 15:44:40.636] [I] Screens: 1
+[2025-01-23 15:44:40.636] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-23 15:44:40.664] [I] Focus set
+[2025-01-23 15:44:40.664] [I] Snipper: preparation done (0)
+[2025-01-23 15:44:40.665] [I] Snipper: about to appear...
+[2025-01-23 15:44:40.665] [I] Snipper: hide
+[2025-01-23 15:44:40.665] [I] Snipper: prepare to show...
+[2025-01-23 15:44:40.666] [I] Snipper: shown
+[2025-01-23 15:44:40.666] [I] Snipper: focus in
+[2025-01-23 15:44:40.666] [I] Snipper: ready [0.07 s]
+[2025-01-23 15:44:46.695] [I] Screenshot (1558, 394, 787 x 471) destination: pin, 
+[2025-01-23 15:44:46.696] [I] Paste image: QPoint(1558, 394)
+[2025-01-23 15:44:46.717] [I] Screenshot successfully saved: pin, 
+[2025-01-23 15:44:46.717] [I] Snipper: about to quit...
+[2025-01-23 15:44:46.763] [I] Snipper: focus out [3] (Foreground window: Paster - Snipaste)
+[2025-01-23 15:44:46.769] [I] Snipper: hide
+[2025-01-23 15:44:46.769] [I] Snipper: hidden
+[2025-01-23 15:44:46.769] [I] Snipper: quit
+[2025-01-23 15:44:46.857] [I] Snipper: scene saved
+[2025-01-23 15:57:58.443] [I] Preloaded 28 files: 6 ms [every 18.9 m]
+[2025-01-23 16:21:37.443] [I] Preloaded 28 files: 5 ms [every 23.7 m]
+[2025-01-23 16:51:11.439] [I] Preloaded 28 files: 7 ms [every 29.6 m]
+[2025-01-23 17:21:11.437] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-23 17:51:12.166] [I] Preloaded 28 files: 735 ms [every 30.0 m]
+[2025-01-23 18:13:42.169] [I] Preloaded 28 files: 5 ms [every 22.5 m]
+[2025-01-23 18:41:50.172] [I] Preloaded 28 files: 5 ms [every 28.1 m]
+[2025-01-23 19:11:50.176] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-23 19:41:50.203] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-23 20:11:50.206] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-23 20:41:50.217] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-23 21:11:50.218] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-23 21:41:50.218] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-23 21:43:32.343] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-23 21:43:32.343] [I] Snip request: 0 (dest: 0)
+[2025-01-23 21:43:32.343] [I] Snipper: preparing...
+[2025-01-23 21:43:32.343] [I] Desktop: QRect(0, 0, 2560 x 1440)
+[2025-01-23 21:43:32.389] [I] Background size: QSize(2560, 1440)
+[2025-01-23 21:43:32.389] [I] Screens: 1
+[2025-01-23 21:43:32.389] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-23 21:43:32.396] [I] Focus set
+[2025-01-23 21:43:32.396] [I] Snipper: preparation done (0)
+[2025-01-23 21:43:32.396] [I] Snipper: about to appear...
+[2025-01-23 21:43:32.396] [I] Snipper: hide
+[2025-01-23 21:43:32.396] [I] Snipper: prepare to show...
+[2025-01-23 21:43:32.397] [I] Snipper: shown
+[2025-01-23 21:43:32.398] [I] Snipper: focus in
+[2025-01-23 21:43:32.398] [I] Snipper: ready [0.054 s]
+[2025-01-23 21:43:34.171] [I] Screenshot (1550, 443, 669 x 703) destination: pin, 
+[2025-01-23 21:43:34.172] [I] Paste image: QPoint(1550, 443)
+[2025-01-23 21:43:34.192] [I] Screenshot successfully saved: pin, 
+[2025-01-23 21:43:34.192] [I] Snipper: about to quit...
+[2025-01-23 21:43:34.239] [I] Snipper: focus out [3] (Foreground window: Paster - Snipaste)
+[2025-01-23 21:43:34.244] [I] Snipper: hide
+[2025-01-23 21:43:34.244] [I] Snipper: hidden
+[2025-01-23 21:43:34.245] [I] Snipper: quit
+[2025-01-23 21:43:34.349] [I] Snipper: scene saved
+[2025-01-23 22:00:45.334] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-23 22:00:45.334] [I] Snip request: 0 (dest: 0)
+[2025-01-23 22:00:45.334] [I] Snipper: preparing...
+[2025-01-23 22:00:45.334] [I] Desktop: QRect(0, 0, 2560 x 1440)
+[2025-01-23 22:00:45.372] [I] Background size: QSize(2560, 1440)
+[2025-01-23 22:00:45.372] [I] Screens: 1
+[2025-01-23 22:00:45.372] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-23 22:00:45.381] [I] Focus set
+[2025-01-23 22:00:45.382] [I] Snipper: preparation done (0)
+[2025-01-23 22:00:45.382] [I] Snipper: about to appear...
+[2025-01-23 22:00:45.382] [I] Snipper: hide
+[2025-01-23 22:00:45.382] [I] Snipper: prepare to show...
+[2025-01-23 22:00:45.383] [I] Snipper: shown
+[2025-01-23 22:00:45.384] [I] Snipper: focus in
+[2025-01-23 22:00:45.384] [I] Snipper: ready [0.049 s]
+[2025-01-23 22:00:48.565] [I] Screenshot (7, 118, 1150 x 1159) destination: clipboard, 
+[2025-01-23 22:00:48.568] [I] Snipper: about to quit...
+[2025-01-23 22:00:48.575] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2025-01-23 22:00:48.580] [I] Snipper: hide
+[2025-01-23 22:00:48.580] [I] Snipper: hidden
+[2025-01-23 22:00:48.581] [I] Snipper: quit
+[2025-01-23 22:00:48.581] [I] Screenshot successfully saved: clipboard, 
+[2025-01-23 22:00:48.677] [I] Snipper: scene saved
+[2025-01-23 22:11:50.225] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-23 22:41:50.235] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-23 23:11:50.242] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-23 23:41:50.227] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-23 23:55:40.328] [I] Snipaste: normal exit
+[2025-01-23 23:55:40.328] [I] Snipper: destructed
+[2025-01-23 23:56:50.276] [I] ***************************************************************
+[2025-01-23 23:56:50.276] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-23 23:56:50.276] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-23 23:56:50.276] [I] Cores: 16
+[2025-01-23 23:56:50.276] [I] Elevated: false
+[2025-01-23 23:56:50.276] [I] Log level: 2
+[2025-01-23 23:56:50.276] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-23 23:56:50.276] [I] Working dir: C:/Windows/system32
+[2025-01-23 23:56:50.276] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-23 23:56:50.276] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-23 23:56:50.276] [I] Screen scale: 1
+[2025-01-23 23:56:50.276] [I] Retina factor: 1
+[2025-01-23 23:56:50.276] [I] Screens: 1
+[2025-01-23 23:56:50.276] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-23 23:56:50.285] [I] Desktops: 1
+[2025-01-23 23:56:50.285] [I] Compatability layer: 
+[2025-01-23 23:56:50.285] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-23 23:56:50.290] [I] Settings imported
+[2025-01-23 23:56:50.291] [I] Breakpad initialized
+[2025-01-23 23:56:50.463] [I] OpenGL acceleration: true
+[2025-01-23 23:56:50.517] [I] Process priority: 1
+[2025-01-23 23:56:50.517] [I] Initializing Snipaste...
+[2025-01-23 23:56:50.875] [I] Prefetch...
+[2025-01-23 23:56:50.955] [I] Load default ssl configuration: 77 ms
+[2025-01-23 23:56:51.035] [I] About to apply settings...
+[2025-01-23 23:56:51.050] [I] Preloaded 28 files: 172 ms
+[2025-01-23 23:56:51.052] [I] Settings applied
+[2025-01-23 23:56:51.061] [I] Log level set to: 2
+[2025-01-23 23:56:51.084] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-23 23:56:51.085] [I] Header version: 201
+[2025-01-23 23:56:51.085] [I] About to restore pasters...
+[2025-01-23 23:56:51.091] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-23 23:56:51.091] [I] Record version: 201
+[2025-01-23 23:56:51.091] [I] To restore: 0
+[2025-01-23 23:56:51.091] [I] Pasters touched
+[2025-01-23 23:56:51.091] [I] All pasters activated: true
+[2025-01-23 23:56:51.118] [I] Unref images: 1 (1 removed)
+[2025-01-23 23:56:51.119] [I] Unref dirs: 0 (0 removed)
+[2025-01-23 23:56:51.119] [I] Empty history info files: 0 (0 removed)
+[2025-01-23 23:56:51.119] [I] Pasters restored
+[2025-01-23 23:56:51.119] [I] Launch time: 849 ms
+[2025-01-23 23:56:51.122] [I] Snipper: hide
+[2025-01-24 00:04:36.702] [I] Preloaded 28 files: 616 ms [every 7.8 m]
+[2025-01-24 00:07:51.363] [I] Snipaste: normal exit
+[2025-01-24 00:07:51.363] [I] Snipper: destructed
+[2025-01-24 10:54:28.967] [I] ***************************************************************
+[2025-01-24 10:54:28.967] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-24 10:54:28.967] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-24 10:54:28.967] [I] Cores: 16
+[2025-01-24 10:54:28.967] [I] Elevated: false
+[2025-01-24 10:54:28.967] [I] Log level: 2
+[2025-01-24 10:54:28.967] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-24 10:54:28.967] [I] Working dir: C:/Windows/System32
+[2025-01-24 10:54:28.967] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-24 10:54:28.967] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-24 10:54:28.967] [I] Screen scale: 1
+[2025-01-24 10:54:28.967] [I] Retina factor: 1
+[2025-01-24 10:54:28.967] [I] Screens: 1
+[2025-01-24 10:54:28.967] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-24 10:54:28.974] [I] Desktops: 1
+[2025-01-24 10:54:28.974] [I] Compatability layer: 
+[2025-01-24 10:54:28.974] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-24 10:54:28.979] [I] Settings imported
+[2025-01-24 10:54:28.979] [I] Breakpad initialized
+[2025-01-24 10:54:29.140] [I] OpenGL acceleration: true
+[2025-01-24 10:54:29.191] [I] Process priority: 1
+[2025-01-24 10:54:29.191] [I] Initializing Snipaste...
+[2025-01-24 10:54:29.517] [I] Prefetch...
+[2025-01-24 10:54:29.593] [I] Load default ssl configuration: 74 ms
+[2025-01-24 10:54:29.670] [I] About to apply settings...
+[2025-01-24 10:54:29.685] [I] Preloaded 28 files: 166 ms
+[2025-01-24 10:54:29.687] [I] Settings applied
+[2025-01-24 10:54:29.696] [I] Log level set to: 2
+[2025-01-24 10:54:29.720] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-24 10:54:29.720] [I] Header version: 201
+[2025-01-24 10:54:29.720] [I] About to restore pasters...
+[2025-01-24 10:54:29.720] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-24 10:54:29.720] [I] Record version: 201
+[2025-01-24 10:54:29.720] [I] To restore: 0
+[2025-01-24 10:54:29.720] [I] Pasters touched
+[2025-01-24 10:54:29.720] [I] All pasters activated: true
+[2025-01-24 10:54:29.744] [I] Unref images: 0 (0 removed)
+[2025-01-24 10:54:29.745] [I] Unref dirs: 0 (0 removed)
+[2025-01-24 10:54:29.745] [I] Empty history info files: 0 (0 removed)
+[2025-01-24 10:54:29.745] [I] Pasters restored
+[2025-01-24 10:54:29.745] [I] Launch time: 779 ms
+[2025-01-24 10:54:29.747] [I] Snipper: hide
+[2025-01-24 11:02:14.715] [I] Preloaded 28 files: 5 ms [every 7.8 m]
+[2025-01-24 11:11:56.410] [I] Preloaded 28 files: 697 ms [every 9.7 m]
+[2025-01-24 11:19:12.425] [I] Preloaded 28 files: 6 ms [every 7.3 m]
+[2025-01-24 11:28:17.442] [I] Preloaded 28 files: 5 ms [every 9.1 m]
+[2025-01-24 11:39:38.448] [I] Preloaded 28 files: 4 ms [every 11.4 m]
+[2025-01-24 11:53:49.454] [I] Preloaded 28 files: 4 ms [every 14.2 m]
+[2025-01-24 12:11:33.455] [I] Preloaded 28 files: 5 ms [every 17.7 m]
+[2025-01-24 12:33:43.450] [I] Preloaded 28 files: 6 ms [every 22.2 m]
+[2025-01-24 13:01:27.071] [I] Preloaded 28 files: 623 ms [every 27.7 m]
+[2025-01-24 13:22:14.073] [I] Preloaded 28 files: 4 ms [every 20.8 m]
+[2025-01-24 13:28:05.230] [I] Silent feed checking finished
+[2025-01-24 13:28:05.230] [I] New version available: 2.10.5
+[2025-01-24 13:48:13.077] [I] Preloaded 28 files: 5 ms [every 26.0 m]
+[2025-01-24 14:18:13.074] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 14:48:13.085] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 15:10:36.093] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-24 15:10:36.093] [I] Snip request: 0 (dest: 0)
+[2025-01-24 15:10:36.093] [I] Snipper: preparing...
+[2025-01-24 15:10:36.093] [I] Desktop: QRect(0, 0, 2560 x 1440)
+[2025-01-24 15:10:36.140] [I] Background size: QSize(2560, 1440)
+[2025-01-24 15:10:36.140] [I] Screens: 1
+[2025-01-24 15:10:36.140] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-24 15:10:36.155] [I] Focus set
+[2025-01-24 15:10:36.156] [I] Snipper: preparation done (0)
+[2025-01-24 15:10:36.157] [I] Snipper: about to appear...
+[2025-01-24 15:10:36.157] [I] Snipper: hide
+[2025-01-24 15:10:36.157] [I] Snipper: prepare to show...
+[2025-01-24 15:10:36.159] [I] Snipper: shown
+[2025-01-24 15:10:36.159] [I] Snipper: focus in
+[2025-01-24 15:10:36.159] [I] Snipper: ready [0.065 s]
+[2025-01-24 15:10:37.749] [I] Screenshot (1546, 230, 853 x 332) destination: pin, 
+[2025-01-24 15:10:37.749] [I] Paste image: QPoint(1546, 230)
+[2025-01-24 15:10:37.773] [I] Screenshot successfully saved: pin, 
+[2025-01-24 15:10:37.773] [I] Snipper: about to quit...
+[2025-01-24 15:10:37.818] [I] Snipper: focus out [3] (Foreground window: Paster - Snipaste)
+[2025-01-24 15:10:37.826] [I] Snipper: hide
+[2025-01-24 15:10:37.826] [I] Snipper: hidden
+[2025-01-24 15:10:37.827] [I] Snipper: quit
+[2025-01-24 15:10:37.916] [I] Snipper: scene saved
+[2025-01-24 15:18:13.092] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-24 15:48:13.094] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 16:18:13.088] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 16:48:13.102] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 17:18:13.785] [I] Preloaded 28 files: 675 ms [every 30.0 m]
+[2025-01-24 17:40:43.794] [I] Preloaded 28 files: 5 ms [every 22.5 m]
+[2025-01-24 19:12:32.136] [I] Snipaste: normal exit
+[2025-01-24 19:12:32.136] [I] Snipper: destructed
+[2025-01-24 19:15:10.768] [I] ***************************************************************
+[2025-01-24 19:15:10.768] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-24 19:15:10.768] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-24 19:15:10.768] [I] Cores: 16
+[2025-01-24 19:15:10.768] [I] Elevated: false
+[2025-01-24 19:15:10.768] [I] Log level: 2
+[2025-01-24 19:15:10.768] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-24 19:15:10.768] [I] Working dir: C:/Windows/system32
+[2025-01-24 19:15:10.768] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-24 19:15:10.768] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-24 19:15:10.768] [I] Screen scale: 1
+[2025-01-24 19:15:10.768] [I] Retina factor: 1
+[2025-01-24 19:15:10.768] [I] Screens: 1
+[2025-01-24 19:15:10.768] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-24 19:15:10.776] [I] Desktops: 1
+[2025-01-24 19:15:10.776] [I] Compatability layer: 
+[2025-01-24 19:15:10.776] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-24 19:15:10.780] [I] Settings imported
+[2025-01-24 19:15:10.781] [I] Breakpad initialized
+[2025-01-24 19:15:10.965] [I] OpenGL acceleration: true
+[2025-01-24 19:15:11.020] [I] Process priority: 1
+[2025-01-24 19:15:11.020] [I] Initializing Snipaste...
+[2025-01-24 19:15:11.382] [I] Prefetch...
+[2025-01-24 19:15:11.564] [I] Preloaded 28 files: 180 ms
+[2025-01-24 19:15:11.901] [I] Load default ssl configuration: 517 ms
+[2025-01-24 19:15:11.936] [I] About to apply settings...
+[2025-01-24 19:15:11.964] [I] Settings applied
+[2025-01-24 19:15:11.974] [I] Log level set to: 2
+[2025-01-24 19:15:12.001] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-24 19:15:12.001] [I] Header version: 201
+[2025-01-24 19:15:12.001] [I] About to restore pasters...
+[2025-01-24 19:15:12.006] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-24 19:15:12.006] [I] Record version: 201
+[2025-01-24 19:15:12.006] [I] To restore: 0
+[2025-01-24 19:15:12.006] [I] Pasters touched
+[2025-01-24 19:15:12.006] [I] All pasters activated: true
+[2025-01-24 19:15:12.033] [I] Unref images: 1 (1 removed)
+[2025-01-24 19:15:12.033] [I] Unref dirs: 0 (0 removed)
+[2025-01-24 19:15:12.034] [I] Empty history info files: 0 (0 removed)
+[2025-01-24 19:15:12.034] [I] Pasters restored
+[2025-01-24 19:15:12.034] [I] Launch time: 1271 ms
+[2025-01-24 19:15:12.037] [I] Snipper: hide
+[2025-01-24 19:22:57.008] [I] Preloaded 28 files: 5 ms [every 7.8 m]
+[2025-01-24 19:32:38.800] [I] Preloaded 28 files: 795 ms [every 9.7 m]
+[2025-01-24 19:39:54.790] [I] Preloaded 28 files: 4 ms [every 7.3 m]
+[2025-01-24 19:48:59.791] [I] Preloaded 28 files: 4 ms [every 9.1 m]
+[2025-01-24 20:00:20.801] [I] Preloaded 28 files: 4 ms [every 11.4 m]
+[2025-01-24 20:14:31.814] [I] Preloaded 28 files: 4 ms [every 14.2 m]
+[2025-01-24 20:32:15.832] [I] Preloaded 28 files: 6 ms [every 17.7 m]
+[2025-01-24 20:54:25.834] [I] Preloaded 28 files: 4 ms [every 22.2 m]
+[2025-01-24 21:22:08.848] [I] Preloaded 28 files: 4 ms [every 27.7 m]
+[2025-01-24 21:35:58.197] [I] Silent feed checking finished
+[2025-01-24 21:35:58.197] [I] New version available: 2.10.5
+[2025-01-24 21:52:15.452] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-24 22:22:15.443] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 22:52:15.444] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 23:22:15.451] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-24 23:52:15.444] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-25 00:22:15.443] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-25 00:38:14.998] [I] Snipaste: normal exit
+[2025-01-25 00:38:14.998] [I] Snipper: destructed
+[2025-01-25 09:39:13.366] [I] ***************************************************************
+[2025-01-25 09:39:13.366] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-25 09:39:13.366] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-25 09:39:13.366] [I] Cores: 16
+[2025-01-25 09:39:13.366] [I] Elevated: false
+[2025-01-25 09:39:13.366] [I] Log level: 2
+[2025-01-25 09:39:13.366] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-25 09:39:13.366] [I] Working dir: C:/Windows/System32
+[2025-01-25 09:39:13.366] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-25 09:39:13.366] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-25 09:39:13.366] [I] Screen scale: 1.5
+[2025-01-25 09:39:13.366] [I] Retina factor: 1
+[2025-01-25 09:39:13.366] [I] Screens: 1
+[2025-01-25 09:39:13.366] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-25 09:39:13.403] [I] Desktops: 1
+[2025-01-25 09:39:13.403] [I] Compatability layer: 
+[2025-01-25 09:39:13.403] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-25 09:39:13.408] [I] Settings imported
+[2025-01-25 09:39:13.409] [I] Breakpad initialized
+[2025-01-25 09:39:13.425] [I] OpenGL acceleration: false
+[2025-01-25 09:39:13.437] [I] Process priority: 1
+[2025-01-25 09:39:13.437] [I] Initializing Snipaste...
+[2025-01-25 09:39:13.858] [I] Prefetch...
+[2025-01-25 09:39:13.871] [I] Preloaded 28 files: 11 ms
+[2025-01-25 09:39:13.879] [I] About to apply settings...
+[2025-01-25 09:39:13.880] [I] Load default ssl configuration: 20 ms
+[2025-01-25 09:39:13.891] [I] Settings applied
+[2025-01-25 09:39:13.901] [I] Log level set to: 2
+[2025-01-25 09:39:13.930] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-25 09:39:13.930] [I] Header version: 201
+[2025-01-25 09:39:13.930] [I] About to restore pasters...
+[2025-01-25 09:39:13.931] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-25 09:39:13.931] [I] Record version: 201
+[2025-01-25 09:39:13.931] [I] To restore: 0
+[2025-01-25 09:39:13.931] [I] Pasters touched
+[2025-01-25 09:39:13.931] [I] All pasters activated: true
+[2025-01-25 09:39:13.959] [I] Unref images: 0 (0 removed)
+[2025-01-25 09:39:13.959] [I] Unref dirs: 0 (0 removed)
+[2025-01-25 09:39:13.960] [I] Empty history info files: 0 (0 removed)
+[2025-01-25 09:39:13.960] [I] Pasters restored
+[2025-01-25 09:39:13.960] [I] Launch time: 595 ms
+[2025-01-25 09:39:13.963] [I] Snipper: hide
+[2025-01-25 09:46:58.930] [I] Preloaded 28 files: 6 ms [every 7.8 m]
+[2025-01-25 09:56:39.936] [I] Preloaded 28 files: 8 ms [every 9.7 m]
+[2025-01-25 10:08:46.929] [I] Preloaded 28 files: 6 ms [every 12.1 m]
+[2025-01-25 10:23:54.936] [I] Preloaded 28 files: 9 ms [every 15.1 m]
+[2025-01-25 10:42:49.929] [I] Preloaded 28 files: 5 ms [every 18.9 m]
+[2025-01-25 10:51:57.295] [I] Snipaste: normal exit
+[2025-01-25 10:51:57.296] [I] Snipper: destructed
+[2025-01-25 10:52:52.842] [I] ***************************************************************
+[2025-01-25 10:52:52.842] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-25 10:52:52.842] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-25 10:52:52.842] [I] Cores: 16
+[2025-01-25 10:52:52.842] [I] Elevated: false
+[2025-01-25 10:52:52.842] [I] Log level: 2
+[2025-01-25 10:52:52.842] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-25 10:52:52.842] [I] Working dir: C:/Windows/system32
+[2025-01-25 10:52:52.842] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-25 10:52:52.842] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-25 10:52:52.842] [I] Screen scale: 1
+[2025-01-25 10:52:52.842] [I] Retina factor: 1
+[2025-01-25 10:52:52.842] [I] Screens: 1
+[2025-01-25 10:52:52.842] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-25 10:52:52.850] [I] Desktops: 1
+[2025-01-25 10:52:52.850] [I] Compatability layer: 
+[2025-01-25 10:52:52.850] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-25 10:52:52.857] [I] Settings imported
+[2025-01-25 10:52:52.858] [I] Breakpad initialized
+[2025-01-25 10:52:53.076] [I] OpenGL acceleration: true
+[2025-01-25 10:52:53.146] [I] Process priority: 1
+[2025-01-25 10:52:53.147] [I] Initializing Snipaste...
+[2025-01-25 10:52:53.530] [I] Prefetch...
+[2025-01-25 10:52:53.610] [I] Load default ssl configuration: 78 ms
+[2025-01-25 10:52:53.693] [I] About to apply settings...
+[2025-01-25 10:52:53.711] [I] Preloaded 28 files: 179 ms
+[2025-01-25 10:52:53.714] [I] Settings applied
+[2025-01-25 10:52:53.724] [I] Log level set to: 2
+[2025-01-25 10:52:53.748] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-25 10:52:53.748] [I] Header version: 201
+[2025-01-25 10:52:53.748] [I] About to restore pasters...
+[2025-01-25 10:52:53.753] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-25 10:52:53.753] [I] Record version: 201
+[2025-01-25 10:52:53.753] [I] To restore: 0
+[2025-01-25 10:52:53.753] [I] Pasters touched
+[2025-01-25 10:52:53.753] [I] All pasters activated: true
+[2025-01-25 10:52:53.780] [I] Unref images: 0 (0 removed)
+[2025-01-25 10:52:53.781] [I] Unref dirs: 0 (0 removed)
+[2025-01-25 10:52:53.781] [I] Empty history info files: 0 (0 removed)
+[2025-01-25 10:52:53.781] [I] Pasters restored
+[2025-01-25 10:52:53.781] [I] Launch time: 947 ms
+[2025-01-25 10:52:53.784] [I] Snipper: hide
+[2025-01-25 11:00:39.382] [I] Preloaded 28 files: 623 ms [every 7.8 m]
+[2025-01-25 11:06:29.017] [I] Preloaded 28 files: 631 ms [every 5.8 m]
+[2025-01-25 11:10:51.020] [I] Preloaded 28 files: 4 ms [every 4.4 m]
+[2025-01-25 11:16:18.031] [I] Preloaded 28 files: 4 ms [every 5.4 m]
+[2025-01-25 11:23:07.043] [I] Preloaded 28 files: 12 ms [every 6.8 m]
+[2025-01-25 11:31:38.041] [I] Preloaded 28 files: 4 ms [every 8.5 m]
+[2025-01-25 11:42:17.040] [I] Preloaded 28 files: 4 ms [every 10.6 m]
+[2025-01-25 11:55:35.034] [I] Preloaded 28 files: 4 ms [every 13.3 m]
+[2025-01-25 12:12:13.653] [I] Preloaded 28 files: 623 ms [every 16.6 m]
+[2025-01-25 12:24:41.646] [I] Preloaded 28 files: 4 ms [every 12.5 m]
+[2025-01-25 12:40:16.644] [I] Preloaded 28 files: 5 ms [every 15.6 m]
+[2025-01-25 12:59:45.643] [I] Preloaded 28 files: 6 ms [every 19.5 m]
+[2025-01-25 13:24:07.647] [I] Preloaded 28 files: 4 ms [every 24.4 m]
+[2025-01-25 13:40:48.247] [I] Silent feed checking finished
+[2025-01-25 13:40:48.247] [I] New version available: 2.10.5
+[2025-01-25 13:54:07.655] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 14:24:07.664] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 14:54:09.179] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 15:24:09.187] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-25 15:54:09.175] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 16:24:09.182] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 16:54:09.182] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-25 17:24:09.187] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 17:54:09.202] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 18:24:09.213] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 18:54:09.835] [I] Preloaded 28 files: 620 ms [every 30.0 m]
+[2025-01-25 19:16:39.837] [I] Preloaded 28 files: 4 ms [every 22.5 m]
+[2025-01-25 19:44:47.832] [I] Preloaded 28 files: 4 ms [every 28.1 m]
+[2025-01-25 20:14:47.842] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 20:44:47.847] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-25 21:14:47.850] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-25 21:44:47.862] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-25 22:14:47.853] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-25 22:44:43.453] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-25 23:14:43.454] [I] Preloaded 28 files: 7 ms [every 30.0 m]
+[2025-01-25 23:44:43.489] [I] Preloaded 28 files: 53 ms [every 30.0 m]
+[2025-01-26 00:14:44.492] [I] Preloaded 28 files: 1005 ms [every 30.0 m]
+[2025-01-26 00:28:37.777] [I] Snipaste: normal exit
+[2025-01-26 00:28:37.777] [I] Snipper: destructed
+[2025-01-26 08:18:36.764] [I] ***************************************************************
+[2025-01-26 08:18:36.764] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-26 08:18:36.764] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-26 08:18:36.764] [I] Cores: 16
+[2025-01-26 08:18:36.764] [I] Elevated: false
+[2025-01-26 08:18:36.764] [I] Log level: 2
+[2025-01-26 08:18:36.764] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-26 08:18:36.764] [I] Working dir: C:/Windows/System32
+[2025-01-26 08:18:36.764] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-26 08:18:36.764] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-26 08:18:36.764] [I] Screen scale: 1.5
+[2025-01-26 08:18:36.764] [I] Retina factor: 1
+[2025-01-26 08:18:36.765] [I] Screens: 1
+[2025-01-26 08:18:36.765] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-26 08:18:36.775] [I] Desktops: 1
+[2025-01-26 08:18:36.775] [I] Compatability layer: 
+[2025-01-26 08:18:36.775] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-26 08:18:36.781] [I] Settings imported
+[2025-01-26 08:18:36.782] [I] Breakpad initialized
+[2025-01-26 08:18:37.400] [I] OpenGL acceleration: false
+[2025-01-26 08:18:37.415] [I] Process priority: 1
+[2025-01-26 08:18:37.415] [I] Initializing Snipaste...
+[2025-01-26 08:18:37.923] [I] Prefetch...
+[2025-01-26 08:18:37.938] [I] Preloaded 28 files: 12 ms
+[2025-01-26 08:18:37.946] [I] Load default ssl configuration: 20 ms
+[2025-01-26 08:18:37.947] [I] About to apply settings...
+[2025-01-26 08:18:37.961] [I] Settings applied
+[2025-01-26 08:18:37.972] [I] Log level set to: 2
+[2025-01-26 08:18:38.001] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-26 08:18:38.001] [I] Header version: 201
+[2025-01-26 08:18:38.001] [I] About to restore pasters...
+[2025-01-26 08:18:38.002] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-26 08:18:38.002] [I] Record version: 201
+[2025-01-26 08:18:38.002] [I] To restore: 0
+[2025-01-26 08:18:38.002] [I] Pasters touched
+[2025-01-26 08:18:38.002] [I] All pasters activated: true
+[2025-01-26 08:18:38.033] [I] Unref images: 0 (0 removed)
+[2025-01-26 08:18:38.033] [I] Unref dirs: 0 (0 removed)
+[2025-01-26 08:18:38.087] [I] Empty history info files: 0 (0 removed)
+[2025-01-26 08:18:38.087] [I] Pasters restored
+[2025-01-26 08:18:38.087] [I] Launch time: 1324 ms
+[2025-01-26 08:18:38.092] [I] Snipper: hide
+[2025-01-26 08:26:23.011] [I] Preloaded 28 files: 6 ms [every 7.8 m]
+[2025-01-26 08:36:04.018] [I] Preloaded 28 files: 5 ms [every 9.7 m]
+[2025-01-26 08:48:11.022] [I] Preloaded 28 files: 4 ms [every 12.1 m]
+[2025-01-26 09:03:19.021] [I] Preloaded 28 files: 5 ms [every 15.1 m]
+[2025-01-26 09:22:14.023] [I] Preloaded 28 files: 8 ms [every 18.9 m]
+[2025-01-26 09:45:53.029] [I] Preloaded 28 files: 7 ms [every 23.7 m]
+[2025-01-26 10:15:27.052] [I] Preloaded 28 files: 8 ms [every 29.6 m]
+[2025-01-26 10:45:27.068] [I] Preloaded 28 files: 8 ms [every 30.0 m]
+[2025-01-26 12:43:44.062] [I] Snipaste: normal exit
+[2025-01-26 12:43:44.063] [I] Snipper: destructed
+[2025-01-26 12:44:48.563] [I] ***************************************************************
+[2025-01-26 12:44:48.563] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-26 12:44:48.563] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-26 12:44:48.563] [I] Cores: 16
+[2025-01-26 12:44:48.563] [I] Elevated: false
+[2025-01-26 12:44:48.563] [I] Log level: 2
+[2025-01-26 12:44:48.563] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-26 12:44:48.563] [I] Working dir: C:/Windows/system32
+[2025-01-26 12:44:48.563] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-26 12:44:48.563] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-26 12:44:48.563] [I] Screen scale: 1.5
+[2025-01-26 12:44:48.563] [I] Retina factor: 1
+[2025-01-26 12:44:48.563] [I] Screens: 1
+[2025-01-26 12:44:48.563] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-26 12:44:48.574] [I] Desktops: 2
+[2025-01-26 12:44:48.574] [I] Compatability layer: 
+[2025-01-26 12:44:48.574] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-26 12:44:48.579] [I] Settings imported
+[2025-01-26 12:44:48.580] [I] Breakpad initialized
+[2025-01-26 12:44:48.598] [I] OpenGL acceleration: false
+[2025-01-26 12:44:48.610] [I] Process priority: 1
+[2025-01-26 12:44:48.610] [I] Initializing Snipaste...
+[2025-01-26 12:44:49.047] [I] Prefetch...
+[2025-01-26 12:44:49.155] [I] Load default ssl configuration: 105 ms
+[2025-01-26 12:44:49.246] [I] About to apply settings...
+[2025-01-26 12:44:49.262] [I] Preloaded 28 files: 212 ms
+[2025-01-26 12:44:49.268] [I] Settings applied
+[2025-01-26 12:44:49.279] [I] Log level set to: 2
+[2025-01-26 12:44:49.308] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-26 12:44:49.309] [I] Header version: 201
+[2025-01-26 12:44:49.309] [I] About to restore pasters...
+[2025-01-26 12:44:49.347] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-26 12:44:49.347] [I] Record version: 201
+[2025-01-26 12:44:49.347] [I] To restore: 0
+[2025-01-26 12:44:49.347] [I] Pasters touched
+[2025-01-26 12:44:49.347] [I] All pasters activated: true
+[2025-01-26 12:44:49.380] [I] Unref images: 0 (0 removed)
+[2025-01-26 12:44:49.380] [I] Unref dirs: 0 (0 removed)
+[2025-01-26 12:44:49.380] [I] Empty history info files: 0 (0 removed)
+[2025-01-26 12:44:49.380] [I] Pasters restored
+[2025-01-26 12:44:49.380] [I] Launch time: 823 ms
+[2025-01-26 12:44:49.386] [I] Snipper: hide
+[2025-01-26 12:52:35.462] [I] Preloaded 28 files: 1148 ms [every 7.8 m]
+[2025-01-26 12:58:24.476] [I] Preloaded 28 files: 7 ms [every 5.8 m]
+[2025-01-26 13:05:40.476] [I] Preloaded 28 files: 7 ms [every 7.3 m]
+[2025-01-26 13:14:45.475] [I] Preloaded 28 files: 8 ms [every 9.1 m]
+[2025-01-26 13:26:06.476] [I] Preloaded 28 files: 7 ms [every 11.4 m]
+[2025-01-26 13:28:36.204] [I] Silent feed checking finished
+[2025-01-26 13:28:36.204] [I] New version available: 2.10.5
+[2025-01-26 13:40:17.473] [I] Preloaded 28 files: 8 ms [every 14.2 m]
+[2025-01-26 13:58:01.481] [I] Preloaded 28 files: 8 ms [every 17.7 m]
+[2025-01-26 14:20:11.491] [I] Preloaded 28 files: 7 ms [every 22.2 m]
+[2025-01-26 14:46:16.404] [I] System suspended
+[2025-01-26 15:36:14.665] [I] Preloaded 28 files: 1110 ms [every 27.7 m]
+[2025-01-26 15:36:15.962] [I] System resumes
+[2025-01-26 15:36:15.968] [I] Preloaded 28 files: 5 ms
+[2025-01-26 15:57:01.686] [I] Preloaded 28 files: 5 ms [every 20.8 m]
+[2025-01-26 16:23:00.685] [I] Preloaded 28 files: 4 ms [every 26.0 m]
+[2025-01-26 16:53:00.695] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-26 17:23:01.314] [I] Preloaded 28 files: 624 ms [every 30.0 m]
+[2025-01-26 17:45:31.323] [I] Preloaded 28 files: 4 ms [every 22.5 m]
+[2025-01-26 18:13:39.341] [I] Preloaded 28 files: 3 ms [every 28.1 m]
+[2025-01-26 18:43:39.344] [I] Preloaded 28 files: 3 ms [every 30.0 m]
+[2025-01-26 19:13:39.344] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-26 19:43:39.347] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-26 20:13:39.352] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-26 20:43:39.359] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-26 21:13:39.358] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-26 21:43:39.359] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-26 22:13:39.363] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-26 22:43:39.366] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-26 23:05:02.138] [I] Snipaste: normal exit
+[2025-01-26 23:05:02.138] [I] Snipper: destructed
+[2025-01-26 23:09:08.237] [I] ***************************************************************
+[2025-01-26 23:09:08.237] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-26 23:09:08.237] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-26 23:09:08.237] [I] Cores: 16
+[2025-01-26 23:09:08.237] [I] Elevated: false
+[2025-01-26 23:09:08.238] [I] Log level: 2
+[2025-01-26 23:09:08.238] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-26 23:09:08.238] [I] Working dir: C:/Windows/System32
+[2025-01-26 23:09:08.238] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-26 23:09:08.238] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-26 23:09:08.238] [I] Screen scale: 1.5
+[2025-01-26 23:09:08.238] [I] Retina factor: 1
+[2025-01-26 23:09:08.238] [I] Screens: 1
+[2025-01-26 23:09:08.238] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-26 23:09:08.275] [I] Desktops: 2
+[2025-01-26 23:09:08.275] [I] Compatability layer: 
+[2025-01-26 23:09:08.275] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-26 23:09:08.281] [I] Settings imported
+[2025-01-26 23:09:08.283] [I] Breakpad initialized
+[2025-01-26 23:09:08.303] [I] OpenGL acceleration: false
+[2025-01-26 23:09:08.321] [I] Process priority: 1
+[2025-01-26 23:09:08.321] [I] Initializing Snipaste...
+[2025-01-26 23:09:08.677] [I] Prefetch...
+[2025-01-26 23:09:08.694] [I] Preloaded 28 files: 13 ms
+[2025-01-26 23:09:08.704] [I] About to apply settings...
+[2025-01-26 23:09:08.712] [I] Load default ssl configuration: 31 ms
+[2025-01-26 23:09:08.721] [I] Settings applied
+[2025-01-26 23:09:08.734] [I] Log level set to: 2
+[2025-01-26 23:09:08.798] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-26 23:09:08.800] [I] Header version: 201
+[2025-01-26 23:09:08.800] [I] About to restore pasters...
+[2025-01-26 23:09:08.800] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-26 23:09:08.800] [I] Record version: 201
+[2025-01-26 23:09:08.800] [I] To restore: 0
+[2025-01-26 23:09:08.800] [I] Pasters touched
+[2025-01-26 23:09:08.800] [I] All pasters activated: true
+[2025-01-26 23:09:08.845] [I] Unref images: 0 (0 removed)
+[2025-01-26 23:09:08.846] [I] Unref dirs: 0 (0 removed)
+[2025-01-26 23:09:08.846] [I] Empty history info files: 0 (0 removed)
+[2025-01-26 23:09:08.846] [I] Pasters restored
+[2025-01-26 23:09:08.846] [I] Launch time: 610 ms
+[2025-01-26 23:09:08.860] [I] Snipper: hide
+[2025-01-26 23:16:53.805] [I] Preloaded 28 files: 5 ms [every 7.8 m]
+[2025-01-26 23:26:34.819] [I] Preloaded 28 files: 12 ms [every 9.7 m]
+[2025-01-26 23:38:41.823] [I] Preloaded 28 files: 6 ms [every 12.1 m]
+[2025-01-26 23:49:49.494] [I] Silent feed checking finished
+[2025-01-26 23:49:49.494] [I] New version available: 2.10.5
+[2025-01-26 23:53:49.838] [I] Preloaded 28 files: 8 ms [every 15.1 m]
+[2025-01-27 00:02:49.069] [I] Snipaste: normal exit
+[2025-01-27 00:02:49.069] [I] Snipper: destructed
+[2025-01-27 10:13:53.391] [I] ***************************************************************
+[2025-01-27 10:13:53.391] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-27 10:13:53.391] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-27 10:13:53.391] [I] Cores: 16
+[2025-01-27 10:13:53.391] [I] Elevated: false
+[2025-01-27 10:13:53.391] [I] Log level: 2
+[2025-01-27 10:13:53.391] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-27 10:13:53.391] [I] Working dir: C:/Windows/System32
+[2025-01-27 10:13:53.391] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-27 10:13:53.391] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-27 10:13:53.391] [I] Screen scale: 1
+[2025-01-27 10:13:53.391] [I] Retina factor: 1
+[2025-01-27 10:13:53.391] [I] Screens: 1
+[2025-01-27 10:13:53.391] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-27 10:13:53.399] [I] Desktops: 2
+[2025-01-27 10:13:53.399] [I] Compatability layer: 
+[2025-01-27 10:13:53.399] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-27 10:13:53.403] [I] Settings imported
+[2025-01-27 10:13:53.404] [I] Breakpad initialized
+[2025-01-27 10:13:53.585] [I] OpenGL acceleration: true
+[2025-01-27 10:13:53.642] [I] Process priority: 1
+[2025-01-27 10:13:53.642] [I] Initializing Snipaste...
+[2025-01-27 10:13:53.920] [I] Prefetch...
+[2025-01-27 10:13:53.932] [I] Preloaded 28 files: 9 ms
+[2025-01-27 10:13:53.937] [I] About to apply settings...
+[2025-01-27 10:13:53.938] [I] Load default ssl configuration: 15 ms
+[2025-01-27 10:13:53.949] [I] Settings applied
+[2025-01-27 10:13:53.958] [I] Log level set to: 2
+[2025-01-27 10:13:53.985] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-27 10:13:53.985] [I] Header version: 201
+[2025-01-27 10:13:53.985] [I] About to restore pasters...
+[2025-01-27 10:13:53.985] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-27 10:13:53.985] [I] Record version: 201
+[2025-01-27 10:13:53.985] [I] To restore: 0
+[2025-01-27 10:13:53.985] [I] Pasters touched
+[2025-01-27 10:13:53.985] [I] All pasters activated: true
+[2025-01-27 10:13:54.010] [I] Unref images: 0 (0 removed)
+[2025-01-27 10:13:54.010] [I] Unref dirs: 0 (0 removed)
+[2025-01-27 10:13:54.010] [I] Empty history info files: 0 (0 removed)
+[2025-01-27 10:13:54.011] [I] Pasters restored
+[2025-01-27 10:13:54.011] [I] Launch time: 620 ms
+[2025-01-27 10:13:54.013] [I] Snipper: hide
+[2025-01-27 10:21:37.930] [I] Preloaded 28 files: 5 ms [every 7.8 m]
+[2025-01-27 10:31:19.752] [I] Preloaded 28 files: 824 ms [every 9.7 m]
+[2025-01-27 10:38:35.761] [I] Preloaded 28 files: 7 ms [every 7.3 m]
+[2025-01-27 10:47:40.762] [I] Preloaded 28 files: 5 ms [every 9.1 m]
+[2025-01-27 10:59:01.759] [I] Preloaded 28 files: 5 ms [every 11.4 m]
+[2025-01-27 11:13:12.758] [I] Preloaded 28 files: 6 ms [every 14.2 m]
+[2025-01-27 11:30:56.765] [I] Preloaded 28 files: 5 ms [every 17.7 m]
+[2025-01-27 11:53:06.772] [I] Preloaded 28 files: 5 ms [every 22.2 m]
+[2025-01-27 12:20:49.771] [I] Preloaded 28 files: 5 ms [every 27.7 m]
+[2025-01-27 12:50:49.779] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-27 13:00:01.767] [I] Silent feed checking finished
+[2025-01-27 13:00:01.767] [I] New version available: 2.10.5
+[2025-01-27 13:20:49.776] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-27 13:50:49.775] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-27 14:20:49.774] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-27 14:50:49.781] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-27 15:22:43.038] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-27 15:52:43.046] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-27 16:22:43.046] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-27 16:52:43.054] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-27 17:22:43.056] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-27 17:44:45.307] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-27 17:44:45.308] [I] Snip request: 0 (dest: 0)
+[2025-01-27 17:44:45.308] [I] Snipper: preparing...
+[2025-01-27 17:44:45.308] [I] Desktop: QRect(0, 0, 2560 x 1440)
+[2025-01-27 17:44:45.390] [I] Background size: QSize(2560, 1440)
+[2025-01-27 17:44:45.390] [I] Screens: 1
+[2025-01-27 17:44:45.390] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-27 17:44:45.413] [I] Focus set
+[2025-01-27 17:44:45.415] [I] Snipper: preparation done (0)
+[2025-01-27 17:44:45.420] [I] Snipper: about to appear...
+[2025-01-27 17:44:45.420] [I] Snipper: hide
+[2025-01-27 17:44:45.420] [I] Snipper: prepare to show...
+[2025-01-27 17:44:45.428] [I] Snipper: shown
+[2025-01-27 17:44:45.428] [I] Snipper: focus in
+[2025-01-27 17:44:45.428] [I] Snipper: ready [0.12 s]
+[2025-01-27 17:44:47.533] [I] Screenshot (601, 437, 1266 x 943) destination: clipboard, 
+[2025-01-27 17:44:47.536] [I] Snipper: about to quit...
+[2025-01-27 17:44:47.551] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2025-01-27 17:44:47.558] [I] Snipper: hide
+[2025-01-27 17:44:47.559] [I] Snipper: hidden
+[2025-01-27 17:44:47.596] [I] Snipper: quit
+[2025-01-27 17:44:47.596] [I] Screenshot successfully saved: clipboard, 
+[2025-01-27 17:44:47.699] [I] Snipper: scene saved
+[2025-01-27 17:52:43.741] [I] Preloaded 28 files: 689 ms [every 30.0 m]
+[2025-01-27 17:53:57.262] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-27 17:53:57.262] [I] Snip request: 0 (dest: 0)
+[2025-01-27 17:53:57.262] [I] Snipper: preparing...
+[2025-01-27 17:53:57.262] [I] Desktop: QRect(0, 0, 2560 x 1440)
+[2025-01-27 17:53:57.307] [I] Background size: QSize(2560, 1440)
+[2025-01-27 17:53:57.307] [I] Screens: 1
+[2025-01-27 17:53:57.307] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-27 17:53:57.318] [I] Focus set
+[2025-01-27 17:53:57.318] [I] Snipper: preparation done (0)
+[2025-01-27 17:53:57.319] [I] Snipper: about to appear...
+[2025-01-27 17:53:57.319] [I] Snipper: hide
+[2025-01-27 17:53:57.319] [I] Snipper: prepare to show...
+[2025-01-27 17:53:57.321] [I] Snipper: shown
+[2025-01-27 17:53:57.321] [I] Snipper: focus in
+[2025-01-27 17:53:57.321] [I] Snipper: ready [0.059000000000000004 s]
+[2025-01-27 17:53:59.758] [I] Screenshot (661, 514, 1178 x 841) destination: clipboard, 
+[2025-01-27 17:53:59.761] [I] Snipper: about to quit...
+[2025-01-27 17:53:59.769] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2025-01-27 17:53:59.777] [I] Snipper: hide
+[2025-01-27 17:53:59.777] [I] Snipper: hidden
+[2025-01-27 17:53:59.777] [I] Snipper: quit
+[2025-01-27 17:53:59.778] [I] Screenshot successfully saved: clipboard, 
+[2025-01-27 17:53:59.862] [I] Snipper: scene saved
+[2025-01-27 20:21:11.290] [I] Snipaste: normal exit
+[2025-01-27 20:21:11.290] [I] Snipper: destructed
+[2025-01-27 20:22:03.371] [I] ***************************************************************
+[2025-01-27 20:22:03.371] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-27 20:22:03.371] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-27 20:22:03.371] [I] Cores: 16
+[2025-01-27 20:22:03.371] [I] Elevated: false
+[2025-01-27 20:22:03.371] [I] Log level: 2
+[2025-01-27 20:22:03.371] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-27 20:22:03.371] [I] Working dir: C:/Windows/system32
+[2025-01-27 20:22:03.371] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-27 20:22:03.371] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-27 20:22:03.371] [I] Screen scale: 1
+[2025-01-27 20:22:03.371] [I] Retina factor: 1
+[2025-01-27 20:22:03.371] [I] Screens: 1
+[2025-01-27 20:22:03.371] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-27 20:22:03.379] [I] Desktops: 2
+[2025-01-27 20:22:03.379] [I] Compatability layer: 
+[2025-01-27 20:22:03.379] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-27 20:22:03.384] [I] Settings imported
+[2025-01-27 20:22:03.385] [I] Breakpad initialized
+[2025-01-27 20:22:03.591] [I] OpenGL acceleration: true
+[2025-01-27 20:22:03.651] [I] Process priority: 1
+[2025-01-27 20:22:03.651] [I] Initializing Snipaste...
+[2025-01-27 20:22:04.017] [I] Prefetch...
+[2025-01-27 20:22:04.094] [I] Load default ssl configuration: 75 ms
+[2025-01-27 20:22:04.175] [I] About to apply settings...
+[2025-01-27 20:22:04.191] [I] Preloaded 28 files: 172 ms
+[2025-01-27 20:22:04.194] [I] Settings applied
+[2025-01-27 20:22:04.202] [I] Log level set to: 2
+[2025-01-27 20:22:04.226] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-27 20:22:04.226] [I] Header version: 201
+[2025-01-27 20:22:04.226] [I] About to restore pasters...
+[2025-01-27 20:22:04.230] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-27 20:22:04.230] [I] Record version: 201
+[2025-01-27 20:22:04.230] [I] To restore: 0
+[2025-01-27 20:22:04.230] [I] Pasters touched
+[2025-01-27 20:22:04.230] [I] All pasters activated: true
+[2025-01-27 20:22:04.254] [I] Unref images: 0 (0 removed)
+[2025-01-27 20:22:04.254] [I] Unref dirs: 0 (0 removed)
+[2025-01-27 20:22:04.255] [I] Empty history info files: 0 (0 removed)
+[2025-01-27 20:22:04.255] [I] Pasters restored
+[2025-01-27 20:22:04.255] [I] Launch time: 889 ms
+[2025-01-27 20:22:04.258] [I] Snipper: hide
+[2025-01-27 20:29:49.838] [I] Preloaded 28 files: 618 ms [every 7.8 m]
+[2025-01-27 20:35:39.422] [I] Preloaded 28 files: 584 ms [every 5.8 m]
+[2025-01-27 20:40:01.438] [I] Preloaded 28 files: 5 ms [every 4.4 m]
+[2025-01-27 20:45:28.443] [I] Preloaded 28 files: 5 ms [every 5.4 m]
+[2025-01-27 20:52:17.450] [I] Preloaded 28 files: 4 ms [every 6.8 m]
+[2025-01-27 20:52:51.199] [I] Silent feed checking finished
+[2025-01-27 20:52:51.199] [I] New version available: 2.10.5
+[2025-01-27 21:00:48.462] [I] Preloaded 28 files: 5 ms [every 8.5 m]
+[2025-01-27 21:11:27.466] [I] Preloaded 28 files: 5 ms [every 10.6 m]
+[2025-01-27 21:24:45.478] [I] Preloaded 28 files: 6 ms [every 13.3 m]
+[2025-01-27 21:41:23.479] [I] Preloaded 28 files: 5 ms [every 16.6 m]
+[2025-01-27 22:02:10.497] [I] Preloaded 28 files: 4 ms [every 20.8 m]
+[2025-01-27 22:28:09.510] [I] Preloaded 28 files: 4 ms [every 26.0 m]
+[2025-01-27 22:58:09.523] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-27 23:06:33.149] [I] Snipaste: normal exit
+[2025-01-27 23:06:33.149] [I] Snipper: destructed
+[2025-01-28 10:00:25.279] [I] ***************************************************************
+[2025-01-28 10:00:25.279] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-28 10:00:25.279] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-28 10:00:25.279] [I] Cores: 16
+[2025-01-28 10:00:25.279] [I] Elevated: false
+[2025-01-28 10:00:25.279] [I] Log level: 2
+[2025-01-28 10:00:25.279] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-28 10:00:25.279] [I] Working dir: C:/Windows/System32
+[2025-01-28 10:00:25.279] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-28 10:00:25.279] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-28 10:00:25.279] [I] Screen scale: 1
+[2025-01-28 10:00:25.279] [I] Retina factor: 1
+[2025-01-28 10:00:25.279] [I] Screens: 1
+[2025-01-28 10:00:25.279] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-28 10:00:25.287] [I] Desktops: 2
+[2025-01-28 10:00:25.287] [I] Compatability layer: 
+[2025-01-28 10:00:25.287] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-28 10:00:25.291] [I] Settings imported
+[2025-01-28 10:00:25.292] [I] Breakpad initialized
+[2025-01-28 10:00:25.462] [I] OpenGL acceleration: true
+[2025-01-28 10:00:25.524] [I] Process priority: 1
+[2025-01-28 10:00:25.524] [I] Initializing Snipaste...
+[2025-01-28 10:00:26.180] [I] Prefetch...
+[2025-01-28 10:00:26.191] [I] Preloaded 28 files: 10 ms
+[2025-01-28 10:00:26.196] [I] About to apply settings...
+[2025-01-28 10:00:26.197] [I] Load default ssl configuration: 15 ms
+[2025-01-28 10:00:26.209] [I] Settings applied
+[2025-01-28 10:00:26.238] [I] Log level set to: 2
+[2025-01-28 10:00:26.273] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-28 10:00:26.273] [I] Header version: 201
+[2025-01-28 10:00:26.273] [I] About to restore pasters...
+[2025-01-28 10:00:26.273] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-28 10:00:26.273] [I] Record version: 201
+[2025-01-28 10:00:26.273] [I] To restore: 0
+[2025-01-28 10:00:26.273] [I] Pasters touched
+[2025-01-28 10:00:26.273] [I] All pasters activated: true
+[2025-01-28 10:00:26.308] [I] Unref images: 0 (0 removed)
+[2025-01-28 10:00:26.308] [I] Unref dirs: 0 (0 removed)
+[2025-01-28 10:00:26.309] [I] Empty history info files: 0 (0 removed)
+[2025-01-28 10:00:26.309] [I] Pasters restored
+[2025-01-28 10:00:26.309] [I] Launch time: 1031 ms
+[2025-01-28 10:00:26.312] [I] Snipper: hide
+[2025-01-28 10:08:11.276] [I] Preloaded 28 files: 4 ms [every 7.8 m]
+[2025-01-28 10:17:52.880] [I] Preloaded 28 files: 597 ms [every 9.7 m]
+[2025-01-28 10:25:08.889] [I] Preloaded 28 files: 4 ms [every 7.3 m]
+[2025-01-28 10:34:13.903] [I] Preloaded 28 files: 4 ms [every 9.1 m]
+[2025-01-28 10:45:34.908] [I] Preloaded 28 files: 4 ms [every 11.4 m]
+[2025-01-28 10:59:45.911] [I] Preloaded 28 files: 5 ms [every 14.2 m]
+[2025-01-28 11:17:29.911] [I] Preloaded 28 files: 6 ms [every 17.7 m]
+[2025-01-28 11:39:39.920] [I] Preloaded 28 files: 4 ms [every 22.2 m]
+[2025-01-28 12:07:22.931] [I] Preloaded 28 files: 4 ms [every 27.7 m]
+[2025-01-28 12:37:22.933] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-28 12:50:00.020] [I] Silent feed checking finished
+[2025-01-28 12:50:00.020] [I] New version available: 2.10.5
+[2025-01-28 13:07:22.949] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-28 13:37:22.956] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-28 14:07:22.962] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 14:37:22.967] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-28 15:07:22.979] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 15:37:22.987] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 16:07:22.999] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 16:37:23.001] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 17:07:23.004] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 17:37:23.002] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-28 18:07:23.014] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 18:37:23.599] [I] Preloaded 28 files: 578 ms [every 30.0 m]
+[2025-01-28 18:59:53.598] [I] Preloaded 28 files: 5 ms [every 22.5 m]
+[2025-01-28 19:28:01.602] [I] Preloaded 28 files: 4 ms [every 28.1 m]
+[2025-01-28 19:58:01.600] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 20:28:01.605] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 20:58:01.616] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-28 21:28:01.616] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 21:58:01.616] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 22:28:01.629] [I] Preloaded 28 files: 16 ms [every 30.0 m]
+[2025-01-28 22:57:58.173] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-28 23:27:58.172] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-28 23:36:28.552] [I] Snipaste: normal exit
+[2025-01-28 23:36:28.552] [I] Snipper: destructed
+[2025-01-29 11:25:50.476] [I] ***************************************************************
+[2025-01-29 11:25:50.476] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-29 11:25:50.476] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-29 11:25:50.476] [I] Cores: 16
+[2025-01-29 11:25:50.476] [I] Elevated: false
+[2025-01-29 11:25:50.476] [I] Log level: 2
+[2025-01-29 11:25:50.476] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-29 11:25:50.476] [I] Working dir: C:/Windows/System32
+[2025-01-29 11:25:50.476] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-29 11:25:50.476] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-29 11:25:50.476] [I] Screen scale: 1
+[2025-01-29 11:25:50.476] [I] Retina factor: 1
+[2025-01-29 11:25:50.476] [I] Screens: 1
+[2025-01-29 11:25:50.476] [I]     QRect(0, 0, 2560 x 1440), NAME = "\\.\DISPLAY11", DPI = 96 , DPR = 1
+[2025-01-29 11:25:50.487] [I] Desktops: 2
+[2025-01-29 11:25:50.487] [I] Compatability layer: 
+[2025-01-29 11:25:50.487] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-29 11:25:50.492] [I] Settings imported
+[2025-01-29 11:25:50.493] [I] Breakpad initialized
+[2025-01-29 11:25:50.697] [I] OpenGL acceleration: true
+[2025-01-29 11:25:50.766] [I] Process priority: 1
+[2025-01-29 11:25:50.766] [I] Initializing Snipaste...
+[2025-01-29 11:25:51.081] [I] Prefetch...
+[2025-01-29 11:25:51.095] [I] Preloaded 28 files: 11 ms
+[2025-01-29 11:25:51.101] [I] About to apply settings...
+[2025-01-29 11:25:51.101] [I] Load default ssl configuration: 17 ms
+[2025-01-29 11:25:51.116] [I] Settings applied
+[2025-01-29 11:25:51.126] [I] Log level set to: 2
+[2025-01-29 11:25:51.155] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-29 11:25:51.155] [I] Header version: 201
+[2025-01-29 11:25:51.155] [I] About to restore pasters...
+[2025-01-29 11:25:51.155] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-29 11:25:51.155] [I] Record version: 201
+[2025-01-29 11:25:51.155] [I] To restore: 0
+[2025-01-29 11:25:51.155] [I] Pasters touched
+[2025-01-29 11:25:51.155] [I] All pasters activated: true
+[2025-01-29 11:25:51.188] [I] Unref images: 0 (0 removed)
+[2025-01-29 11:25:51.188] [I] Unref dirs: 0 (0 removed)
+[2025-01-29 11:25:51.189] [I] Empty history info files: 0 (0 removed)
+[2025-01-29 11:25:51.189] [I] Pasters restored
+[2025-01-29 11:25:51.189] [I] Launch time: 715 ms
+[2025-01-29 11:25:51.193] [I] Snipper: hide
+[2025-01-29 11:33:36.160] [I] Preloaded 28 files: 4 ms [every 7.8 m]
+[2025-01-29 11:43:17.752] [I] Preloaded 28 files: 602 ms [every 9.7 m]
+[2025-01-29 11:50:33.757] [I] Preloaded 28 files: 5 ms [every 7.3 m]
+[2025-01-29 11:59:38.757] [I] Preloaded 28 files: 4 ms [every 9.1 m]
+[2025-01-29 12:10:59.772] [I] Preloaded 28 files: 5 ms [every 11.4 m]
+[2025-01-29 12:21:41.659] [I] Silent feed checking finished
+[2025-01-29 12:21:41.659] [I] New version available: 2.10.5
+[2025-01-29 12:25:10.780] [I] Preloaded 28 files: 5 ms [every 14.2 m]
+[2025-01-29 12:42:54.790] [I] Preloaded 28 files: 5 ms [every 17.7 m]
+[2025-01-29 13:05:04.795] [I] Preloaded 28 files: 5 ms [every 22.2 m]
+[2025-01-29 13:32:47.800] [I] Preloaded 28 files: 6 ms [every 27.7 m]
+[2025-01-29 14:02:47.798] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-29 14:32:47.809] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-29 15:02:47.815] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-29 15:32:47.813] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-29 16:02:47.818] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-29 16:32:47.824] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-29 17:02:47.834] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-29 17:32:47.833] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-29 18:02:47.835] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-29 18:32:48.402] [I] Preloaded 28 files: 566 ms [every 30.0 m]
+[2025-01-29 18:55:18.408] [I] Preloaded 28 files: 5 ms [every 22.5 m]
+[2025-01-29 19:23:26.969] [I] Preloaded 28 files: 567 ms [every 28.1 m]
+[2025-01-29 19:44:32.974] [I] Preloaded 28 files: 6 ms [every 21.1 m]
+[2025-01-29 20:10:54.972] [I] Preloaded 28 files: 6 ms [every 26.4 m]
+[2025-01-29 20:40:54.975] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-29 21:10:54.967] [I] Preloaded 28 files: 6 ms [every 30.0 m]
+[2025-01-29 21:40:54.977] [I] Preloaded 28 files: 5 ms [every 30.0 m]
+[2025-01-29 22:10:54.983] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-29 22:40:52.765] [I] Preloaded 28 files: 4 ms [every 30.0 m]
+[2025-01-29 22:54:03.916] [I] Snipaste: normal exit
+[2025-01-29 22:54:03.916] [I] Snipper: destructed
+[2025-01-30 22:22:36.185] [I] ***************************************************************
+[2025-01-30 22:22:36.185] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-30 22:22:36.185] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-30 22:22:36.185] [I] Cores: 16
+[2025-01-30 22:22:36.185] [I] Elevated: false
+[2025-01-30 22:22:36.185] [I] Log level: 2
+[2025-01-30 22:22:36.185] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-30 22:22:36.186] [I] Working dir: C:/Windows/System32
+[2025-01-30 22:22:36.186] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-30 22:22:36.186] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-30 22:22:36.186] [I] Screen scale: 1.5
+[2025-01-30 22:22:36.186] [I] Retina factor: 1
+[2025-01-30 22:22:36.186] [I] Screens: 1
+[2025-01-30 22:22:36.186] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-30 22:22:36.194] [I] Desktops: 2
+[2025-01-30 22:22:36.194] [I] Compatability layer: 
+[2025-01-30 22:22:36.194] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-30 22:22:36.201] [I] Settings imported
+[2025-01-30 22:22:36.202] [I] Breakpad initialized
+[2025-01-30 22:22:36.219] [I] OpenGL acceleration: false
+[2025-01-30 22:22:36.233] [I] Process priority: 1
+[2025-01-30 22:22:36.233] [I] Initializing Snipaste...
+[2025-01-30 22:22:36.716] [I] Prefetch...
+[2025-01-30 22:22:36.728] [I] Preloaded 28 files: 11 ms
+[2025-01-30 22:22:36.737] [I] About to apply settings...
+[2025-01-30 22:22:36.742] [I] Load default ssl configuration: 24 ms
+[2025-01-30 22:22:36.752] [I] Settings applied
+[2025-01-30 22:22:36.764] [I] Log level set to: 2
+[2025-01-30 22:22:36.793] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-30 22:22:36.793] [I] Header version: 201
+[2025-01-30 22:22:36.793] [I] About to restore pasters...
+[2025-01-30 22:22:36.794] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-30 22:22:36.794] [I] Record version: 201
+[2025-01-30 22:22:36.794] [I] To restore: 0
+[2025-01-30 22:22:36.794] [I] Pasters touched
+[2025-01-30 22:22:36.794] [I] All pasters activated: true
+[2025-01-30 22:22:36.825] [I] Unref images: 0 (0 removed)
+[2025-01-30 22:22:36.825] [I] Unref dirs: 0 (0 removed)
+[2025-01-30 22:22:36.826] [I] Empty history info files: 0 (0 removed)
+[2025-01-30 22:22:36.826] [I] Pasters restored
+[2025-01-30 22:22:36.826] [I] Launch time: 642 ms
+[2025-01-30 22:22:36.830] [I] Snipper: hide
+[2025-01-30 22:30:21.809] [I] Preloaded 28 files: 8 ms [every 7.8 m]
+[2025-01-30 22:34:06.527] [I] Silent feed checking finished
+[2025-01-30 22:34:06.527] [I] New version available: 2.10.5
+[2025-01-30 22:40:03.670] [I] Preloaded 28 files: 846 ms [every 9.7 m]
+[2025-01-30 22:47:19.682] [I] Preloaded 28 files: 7 ms [every 7.3 m]
+[2025-01-30 22:56:24.682] [I] Preloaded 28 files: 8 ms [every 9.1 m]
+[2025-01-30 23:07:45.679] [I] Preloaded 28 files: 7 ms [every 11.4 m]
+[2025-01-30 23:21:56.675] [I] Preloaded 28 files: 5 ms [every 14.2 m]
+[2025-01-30 23:39:40.685] [I] Preloaded 28 files: 8 ms [every 17.7 m]
+[2025-01-31 00:01:50.708] [I] Preloaded 28 files: 5 ms [every 22.2 m]
+[2025-01-31 00:08:28.135] [I] Snipaste: normal exit
+[2025-01-31 00:08:28.136] [I] Snipper: destructed
+[2025-01-31 11:07:00.383] [I] ***************************************************************
+[2025-01-31 11:07:00.383] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-01-31 11:07:00.383] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-01-31 11:07:00.383] [I] Cores: 16
+[2025-01-31 11:07:00.383] [I] Elevated: false
+[2025-01-31 11:07:00.383] [I] Log level: 2
+[2025-01-31 11:07:00.383] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-01-31 11:07:00.383] [I] Working dir: C:/Windows/System32
+[2025-01-31 11:07:00.383] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-31 11:07:00.383] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-01-31 11:07:00.383] [I] Screen scale: 1.5
+[2025-01-31 11:07:00.383] [I] Retina factor: 1
+[2025-01-31 11:07:00.383] [I] Screens: 1
+[2025-01-31 11:07:00.383] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-31 11:07:00.393] [I] Desktops: 2
+[2025-01-31 11:07:00.393] [I] Compatability layer: 
+[2025-01-31 11:07:00.393] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-01-31 11:07:00.398] [I] Settings imported
+[2025-01-31 11:07:00.399] [I] Breakpad initialized
+[2025-01-31 11:07:00.417] [I] OpenGL acceleration: false
+[2025-01-31 11:07:00.434] [I] Process priority: 1
+[2025-01-31 11:07:00.434] [I] Initializing Snipaste...
+[2025-01-31 11:07:00.792] [I] Prefetch...
+[2025-01-31 11:07:00.804] [I] Preloaded 28 files: 11 ms
+[2025-01-31 11:07:00.812] [I] About to apply settings...
+[2025-01-31 11:07:00.814] [I] Load default ssl configuration: 20 ms
+[2025-01-31 11:07:00.826] [I] Settings applied
+[2025-01-31 11:07:00.837] [I] Log level set to: 2
+[2025-01-31 11:07:00.869] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-01-31 11:07:00.870] [I] Header version: 201
+[2025-01-31 11:07:00.870] [I] About to restore pasters...
+[2025-01-31 11:07:00.870] [I] Group 0 [HVI4DG]: "Default"
+[2025-01-31 11:07:00.870] [I] Record version: 201
+[2025-01-31 11:07:00.870] [I] To restore: 0
+[2025-01-31 11:07:00.870] [I] Pasters touched
+[2025-01-31 11:07:00.870] [I] All pasters activated: true
+[2025-01-31 11:07:00.902] [I] Unref images: 0 (0 removed)
+[2025-01-31 11:07:00.902] [I] Unref dirs: 0 (0 removed)
+[2025-01-31 11:07:00.905] [I] Empty history info files: 0 (0 removed)
+[2025-01-31 11:07:00.905] [I] Pasters restored
+[2025-01-31 11:07:00.905] [I] Launch time: 523 ms
+[2025-01-31 11:07:00.907] [I] Snipper: hide
+[2025-01-31 11:14:45.868] [I] Preloaded 28 files: 7 ms [every 7.8 m]
+[2025-01-31 11:24:27.703] [I] Preloaded 28 files: 842 ms [every 9.7 m]
+[2025-01-31 11:31:43.722] [I] Preloaded 28 files: 7 ms [every 7.3 m]
+[2025-01-31 11:40:48.716] [I] Preloaded 28 files: 7 ms [every 9.1 m]
+[2025-01-31 11:52:09.723] [I] Preloaded 28 files: 7 ms [every 11.4 m]
+[2025-01-31 12:06:20.721] [I] Preloaded 28 files: 7 ms [every 14.2 m]
+[2025-01-31 12:24:04.715] [I] Preloaded 28 files: 8 ms [every 17.7 m]
+[2025-01-31 12:24:18.407] [I] Silent feed checking finished
+[2025-01-31 12:24:18.407] [I] New version available: 2.10.5
+[2025-01-31 12:46:14.711] [I] Preloaded 28 files: 9 ms [every 22.2 m]
+[2025-01-31 13:13:57.711] [I] Preloaded 28 files: 9 ms [every 27.7 m]
+[2025-01-31 13:43:57.718] [I] Preloaded 28 files: 7 ms [every 30.0 m]
+[2025-01-31 18:46:40.483] [I] Preloaded 28 files: 7 ms [every 30.0 m]
+[2025-01-31 18:49:50.186] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-31 18:49:50.186] [I] Snip request: 0 (dest: 0)
+[2025-01-31 18:49:50.187] [I] Snipper: preparing...
+[2025-01-31 18:49:50.187] [I] Desktop: QRect(0, 0, 2560 x 1600)
+[2025-01-31 18:49:50.227] [I] Background size: QSize(2560, 1600)
+[2025-01-31 18:49:50.227] [I] Screens: 1
+[2025-01-31 18:49:50.227] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-31 18:49:50.249] [I] Focus set
+[2025-01-31 18:49:50.251] [I] Snipper: preparation done (0)
+[2025-01-31 18:49:50.252] [I] Snipper: about to appear...
+[2025-01-31 18:49:50.252] [I] Snipper: hide
+[2025-01-31 18:49:50.252] [I] Snipper: prepare to show...
+[2025-01-31 18:49:50.256] [I] Snipper: shown
+[2025-01-31 18:49:50.257] [I] Snipper: focus in
+[2025-01-31 18:49:50.257] [I] Snipper: ready [0.07 s]
+[2025-01-31 18:49:52.684] [I] Screenshot (672, 499, 1185 x 865) destination: clipboard, 
+[2025-01-31 18:49:52.685] [I] Snipper: about to quit...
+[2025-01-31 18:49:52.698] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2025-01-31 18:49:52.704] [I] Snipper: hide
+[2025-01-31 18:49:52.704] [I] Snipper: hidden
+[2025-01-31 18:49:52.759] [I] Snipper: quit
+[2025-01-31 18:49:52.759] [I] Screenshot successfully saved: clipboard, 
+[2025-01-31 18:49:52.938] [I] Snipper: scene saved
+[2025-01-31 22:55:07.612] [I] Preloaded 28 files: 647 ms [every 30.0 m]
+[2025-01-31 23:08:41.483] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-31 23:08:41.483] [I] Snip request: 0 (dest: 0)
+[2025-01-31 23:08:41.483] [I] Snipper: preparing...
+[2025-01-31 23:08:41.483] [I] Desktop: QRect(0, 0, 2560 x 1600)
+[2025-01-31 23:08:41.524] [I] Background size: QSize(2560, 1600)
+[2025-01-31 23:08:41.524] [I] Screens: 1
+[2025-01-31 23:08:41.524] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-31 23:08:41.536] [I] Focus set
+[2025-01-31 23:08:41.537] [I] Snipper: preparation done (0)
+[2025-01-31 23:08:41.537] [I] Snipper: about to appear...
+[2025-01-31 23:08:41.537] [I] Snipper: hide
+[2025-01-31 23:08:41.537] [I] Snipper: prepare to show...
+[2025-01-31 23:08:41.539] [I] Snipper: shown
+[2025-01-31 23:08:41.539] [I] Snipper: focus in
+[2025-01-31 23:08:41.539] [I] Snipper: ready [0.056 s]
+[2025-01-31 23:08:44.200] [I] Screenshot (525, 386, 1459 x 1076) destination: pin, 
+[2025-01-31 23:08:44.202] [I] Paste image: QPoint(525, 386)
+[2025-01-31 23:08:44.231] [I] Screenshot successfully saved: pin, 
+[2025-01-31 23:08:44.231] [I] Snipper: about to quit...
+[2025-01-31 23:08:44.319] [I] Snipper: focus out [3] (Foreground window: Paster - Snipaste)
+[2025-01-31 23:08:44.325] [I] Snipper: hide
+[2025-01-31 23:08:44.325] [I] Snipper: hidden
+[2025-01-31 23:08:44.326] [I] Snipper: quit
+[2025-01-31 23:08:44.417] [I] Snipper: scene saved
+[2025-01-31 23:17:37.625] [I] Preloaded 28 files: 7 ms [every 22.5 m]
+[2025-01-31 23:28:20.205] [I] Parsing command arguments [3]: (sp, snip)
+[2025-01-31 23:28:20.205] [I] Snip request: 0 (dest: 0)
+[2025-01-31 23:28:20.205] [I] Snipper: preparing...
+[2025-01-31 23:28:20.205] [I] Desktop: QRect(0, 0, 2560 x 1600)
+[2025-01-31 23:28:20.259] [I] Background size: QSize(2560, 1600)
+[2025-01-31 23:28:20.259] [I] Screens: 1
+[2025-01-31 23:28:20.259] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-01-31 23:28:20.268] [I] Focus set
+[2025-01-31 23:28:20.268] [I] Snipper: preparation done (0)
+[2025-01-31 23:28:20.269] [I] Snipper: about to appear...
+[2025-01-31 23:28:20.269] [I] Snipper: hide
+[2025-01-31 23:28:20.269] [I] Snipper: prepare to show...
+[2025-01-31 23:28:20.270] [I] Snipper: shown
+[2025-01-31 23:28:20.270] [I] Snipper: focus in
+[2025-01-31 23:28:20.270] [I] Snipper: ready [0.064 s]
+[2025-01-31 23:28:26.887] [I] Screenshot (738, 574, 591 x 741) destination: file dialog, 
+[2025-01-31 23:28:27.146] [I] Snipper: focus out [3] (Foreground window: Snipaste)
+[2025-01-31 23:28:35.758] [I] Snipper: focus in
+[2025-01-31 23:28:35.768] [I] Screenshot successfully saved: file dialog, 
+[2025-01-31 23:28:35.768] [I] Snipper: about to quit...
+[2025-01-31 23:28:35.775] [I] Snipper: focus out [3] (Foreground window: Snipper - Snipaste)
+[2025-01-31 23:28:35.780] [I] Snipper: hide
+[2025-01-31 23:28:35.780] [I] Snipper: hidden
+[2025-01-31 23:28:35.781] [I] Snipper: quit
+[2025-01-31 23:28:35.874] [I] Snipper: scene saved
+[2025-01-31 23:45:45.638] [I] Preloaded 28 files: 4 ms [every 28.1 m]
+[2025-02-01 10:44:43.251] [I] ***************************************************************
+[2025-02-01 10:44:43.251] [I] Snipaste 2.10.4 x64 (Desktop) (Qt 6.2.4)
+[2025-02-01 10:44:43.251] [I] OS: Windows 11 Version 2009 [10.0.22631]
+[2025-02-01 10:44:43.251] [I] Cores: 16
+[2025-02-01 10:44:43.251] [I] Elevated: false
+[2025-02-01 10:44:43.251] [I] Log level: 2
+[2025-02-01 10:44:43.251] [I] Application dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64
+[2025-02-01 10:44:43.251] [I] Working dir: C:/Windows/System32
+[2025-02-01 10:44:43.251] [I] Config: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-02-01 10:44:43.251] [I] Library paths: (C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64)
+[2025-02-01 10:44:43.251] [I] Screen scale: 1.5
+[2025-02-01 10:44:43.251] [I] Retina factor: 1
+[2025-02-01 10:44:43.251] [I] Screens: 1
+[2025-02-01 10:44:43.251] [I]     QRect(0, 0, 2560 x 1600), NAME = "\\.\DISPLAY1", DPI = 144 , DPR = 1
+[2025-02-01 10:44:43.261] [I] Desktops: 2
+[2025-02-01 10:44:43.261] [I] Compatability layer: 
+[2025-02-01 10:44:43.261] [I] About to import settings from: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/config.ini
+[2025-02-01 10:44:43.266] [I] Settings imported
+[2025-02-01 10:44:43.267] [I] Breakpad initialized
+[2025-02-01 10:44:43.410] [I] OpenGL acceleration: false
+[2025-02-01 10:44:43.423] [I] Process priority: 1
+[2025-02-01 10:44:43.423] [I] Initializing Snipaste...
+[2025-02-01 10:44:43.883] [I] Prefetch...
+[2025-02-01 10:44:43.894] [I] Preloaded 28 files: 10 ms
+[2025-02-01 10:44:43.904] [I] Load default ssl configuration: 20 ms
+[2025-02-01 10:44:43.904] [I] About to apply settings...
+[2025-02-01 10:44:43.919] [I] Settings applied
+[2025-02-01 10:44:43.929] [I] Log level set to: 2
+[2025-02-01 10:44:43.958] [I] History dir: C:/Users/Zane Leo/Downloads/Snipaste-2.10.4-x64/history
+[2025-02-01 10:44:43.958] [I] Header version: 201
+[2025-02-01 10:44:43.958] [I] About to restore pasters...
+[2025-02-01 10:44:43.958] [I] Group 0 [HVI4DG]: "Default"
+[2025-02-01 10:44:43.958] [I] Record version: 201
+[2025-02-01 10:44:43.958] [I] To restore: 0
+[2025-02-01 10:44:43.958] [I] Pasters touched
+[2025-02-01 10:44:43.958] [I] All pasters activated: true
+[2025-02-01 10:44:43.988] [I] Unref images: 1 (1 removed)
+[2025-02-01 10:44:43.988] [I] Unref dirs: 0 (0 removed)
+[2025-02-01 10:44:43.988] [I] Empty history info files: 0 (0 removed)
+[2025-02-01 10:44:43.988] [I] Pasters restored
+[2025-02-01 10:44:43.989] [I] Launch time: 739 ms
+[2025-02-01 10:44:43.992] [I] Snipper: hide
+[2025-02-01 10:52:25.880] [I] Preloaded 28 files: 6 ms [every 7.8 m]
+[2025-02-01 11:02:06.901] [I] Preloaded 28 files: 7 ms [every 9.7 m]
+[2025-02-01 11:09:34.396] [I] Silent feed checking finished
+[2025-02-01 11:09:34.396] [I] New version available: 2.10.5
+[2025-02-01 11:14:13.895] [I] Preloaded 28 files: 7 ms [every 12.1 m]
+[2025-02-01 11:29:21.894] [I] Preloaded 28 files: 7 ms [every 15.1 m]
+[2025-02-01 11:48:16.897] [I] Preloaded 28 files: 10 ms [every 18.9 m]
+[2025-02-01 12:11:55.890] [I] Preloaded 28 files: 7 ms [every 23.7 m]
+[2025-02-01 12:41:29.907] [I] Preloaded 28 files: 9 ms [every 29.6 m]
+[2025-02-01 13:11:29.906] [I] Preloaded 28 files: 8 ms [every 30.0 m]
+[2025-02-01 13:41:29.914] [I] Preloaded 28 files: 7 ms [every 30.0 m]
+[2025-02-01 14:11:29.914] [I] Preloaded 28 files: 9 ms [every 30.0 m]
+[2025-02-01 14:41:29.909] [I] Preloaded 28 files: 9 ms [every 30.0 m]
+[2025-02-01 15:11:29.907] [I] Preloaded 28 files: 9 ms [every 30.0 m]
+[2025-02-01 15:41:29.913] [I] Preloaded 28 files: 7 ms [every 30.0 m]
+[2025-02-01 16:11:29.918] [I] Preloaded 28 files: 7 ms [every 30.0 m]
+[2025-02-01 16:41:29.909] [I] Preloaded 28 files: 7 ms [every 30.0 m]
+[2025-02-01 17:11:29.906] [I] Preloaded 28 files: 4 ms [every 30.0 m]

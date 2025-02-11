@@ -40,13 +40,13 @@
 
   --md-width: 768px;
 
-  --active-element-color: #ED722E;
-  --active-background-color: #ECF5FF;
-/*  footer高度*/
+  --active-element-color: #ed722e;
+  --active-background-color: #ecf5ff;
+  /*  footer高度*/
   --footer-height: 70px;
-/*  header 高度*/
+  /*  header 高度*/
   --header-height: 60px;
-/*  用户页的主体内容控制*/
+  /*  用户页的主体内容控制*/
   --max-width-1024: 1024px;
   --max-width-1200: 1200px;
 }
@@ -74,7 +74,7 @@
 }
 
 body {
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
   /*min-height: 100vh;*/
   /*color: var(--color-text);*/
   /*background: var(--color-background);*/

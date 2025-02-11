@@ -1,11 +1,63 @@
-<script setup lang="ts">
-import { RouterView } from 'vue-router'
-</script>
-
 <template>
+  <header-bar></header-bar>
   <router-view></router-view>
+  <login-dialog :clicked="loginDialogClicked"></login-dialog>
+  <register-dialog :clicked="registerDialogClicked"></register-dialog>
 </template>
-
+<script>
+import HeaderBar from './components/layout/HeaderBar.vue'
+import LoginDialog from './components/dialog/LoginDialog.vue'
+import RegisterDialog from './components/dialog/RegisterDialog.vue'
+import { useUserStore } from '@/stores/global.js'
+import Cookies from 'js-cookie'
+export default {
+  components: {
+    HeaderBar,
+    LoginDialog,
+    RegisterDialog
+  },
+  data() {
+    return {
+      loginDialogClicked: false,
+      registerDialogClicked: false
+    }
+  },
+  methods: {
+    changeClickedLogin() {
+      this.loginDialogClicked = !this.loginDialogClicked
+    },
+    changeClickedRegister() {
+      this.registerDialogClicked = !this.registerDialogClicked
+    },
+    checkLoginState() {
+      const userStore = useUserStore()
+      const session = Cookies.get('p-session')
+      const avatar = Cookies.get('avatar')
+      console.log(session)
+      console.log(userStore)
+      if (session) {
+        userStore.isLogin = true
+        userStore.avatar = avatar
+      } else {
+        userStore.isLogin = false
+      }
+    }
+  },
+  provide() {
+    return {
+      RegisterDialogClicked: this.changeClickedRegister,
+      loginDialogClicked: this.changeClickedLogin
+    }
+  },
+  mounted() {
+    this.checkLoginState()
+  },
+  beforeRouteEnter(to, from, next) {
+    this.checkLoginState()
+    next()
+  }
+}
+</script>
 <style scoped>
 header {
   line-height: 1.5;
