@@ -17,11 +17,4 @@ public interface RegisterService {
      */
     Long registerByUserNameAndPassword(UserPwdLoginReq loginReq);
 
-    /**
-     * 通过微信公众号进行注册
-     *
-     * @param thirdAccount
-     * @return
-     */
-    Long registerByWechat(String thirdAccount);
 }

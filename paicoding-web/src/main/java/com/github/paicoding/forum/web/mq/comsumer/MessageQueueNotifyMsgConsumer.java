@@ -8,20 +8,21 @@ import com.github.paicoding.forum.service.user.repository.entity.UserRelationDO;
 
 
 public interface MessageQueueNotifyMsgConsumer {
+
     void saveCommentNotify(MessageQueueEvent<CommentDO> event);
 
-    void saveReplyNotify(MessageQueueEvent<CommentDO> event);
+//    void saveReplyNotify(MessageQueueEvent<CommentDO> event);
 
-    void saveArticleNotify(MessageQueueEvent<UserFootDO> event);
+//    void saveArticleNotify(MessageQueueEvent<UserFootDO> event);
+//
+//    void saveArticleNotify(UserFootDO foot, NotifyTypeEnum notifyTypeEnum);
 
-    void saveArticleNotify(UserFootDO foot, NotifyTypeEnum notifyTypeEnum);
+//    void removeArticleNotify(MessageQueueEvent<UserFootDO> event);
 
-    void removeArticleNotify(MessageQueueEvent<UserFootDO> event);
-
-    void saveFollowNotify(MessageQueueEvent<UserRelationDO> event);
-
-    void removeFollowNotify(MessageQueueEvent<UserRelationDO> event);
-
-    void saveRegisterSystemNotify(Long userId);
+//    void saveFollowNotify(MessageQueueEvent<UserRelationDO> event);
+//
+//    void removeFollowNotify(MessageQueueEvent<UserRelationDO> event);
+//
+//    void saveRegisterSystemNotify(Long userId);
 
 }

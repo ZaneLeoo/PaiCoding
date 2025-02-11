@@ -4,7 +4,6 @@ import com.github.hui.quick.plugin.base.file.FileWriteUtil;
 import com.github.paicoding.forum.api.model.exception.ExceptionUtil;
 import com.github.paicoding.forum.api.model.vo.constants.StatusEnum;
 import com.github.paicoding.forum.core.config.ImageProperties;
-import com.github.paicoding.forum.core.util.StopWatchUtil;
 import com.github.paicoding.forum.service.image.oss.ImageUploader;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -39,31 +38,21 @@ public class LocalStorageWrapper implements ImageUploader {
 
     @Override
     public String upload(InputStream input, String fileType) {
-        // 记录耗时分布
-        StopWatchUtil stopWatchUtil = StopWatchUtil.init("图片上传");
         try {
-            if (fileType == null) {
-                // 根据魔数判断文件类型
-                InputStream finalInput = input;
-                byte[] bytes = stopWatchUtil.record("流转字节", () -> StreamUtils.copyToByteArray(finalInput));
-                input = new ByteArrayInputStream(bytes);
-                fileType = getFileType((ByteArrayInputStream) input, fileType);
-            }
-
-            String path = imageProperties.getAbsTmpPath() + imageProperties.getWebImgPath();
+            // 生成存储路径和文件名
+            String path = imageProperties.getAbsTmpPath();
             String fileName = genTmpFileName();
 
-            InputStream finalInput = input;
-            String finalFileType = fileType;
-            FileWriteUtil.FileInfo file = stopWatchUtil.record("存储", () -> FileWriteUtil.saveFileByStream(finalInput, path, fileName, finalFileType));
-            return imageProperties.buildImgUrl(imageProperties.getWebImgPath() + file.getFilename() + "." + file.getFileType());
+            // 使用文件存储工具保存文件
+            FileWriteUtil.FileInfo file = FileWriteUtil.saveFileByStream(input, path, fileName, fileType);
+            return imageProperties.
+                    buildImgUrl(imageProperties.getWebImgPath() + file.getFilename() + "." + file.getFileType());
         } catch (Exception e) {
             log.error("Parse img from httpRequest to BufferedImage error! e:", e);
             throw ExceptionUtil.of(StatusEnum.UPLOAD_PIC_FAILED);
-        } finally {
-            log.info("图片上传耗时: {}", stopWatchUtil.prettyPrint());
         }
     }
+
 
     /**
      * 获取文件临时名称
@@ -71,7 +60,8 @@ public class LocalStorageWrapper implements ImageUploader {
      * @return
      */
     private String genTmpFileName() {
-        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS")) + "_" + random.nextInt(100);
+        return LocalDateTime.now().
+                format(DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS")) + "_" + random.nextInt(100);
     }
 
     /**

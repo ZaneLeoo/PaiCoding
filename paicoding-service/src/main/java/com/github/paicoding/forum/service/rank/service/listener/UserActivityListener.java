@@ -42,19 +42,19 @@ public class UserActivityListener {
                 break;
             case COLLECT:
                 UserFootDO foot = (UserFootDO) msgEvent.getContent();
-                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setCollect(true).setArticleId(foot.getDocumentId()));
+                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setCollect(true).setArticleId(foot.getArticleId()));
                 break;
             case CANCEL_COLLECT:
                 foot = (UserFootDO) msgEvent.getContent();
-                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setCollect(false).setArticleId(foot.getDocumentId()));
+                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setCollect(false).setArticleId(foot.getArticleId()));
                 break;
             case PRAISE:
                 foot = (UserFootDO) msgEvent.getContent();
-                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setPraise(true).setArticleId(foot.getDocumentId()));
+                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setPraise(true).setArticleId(foot.getArticleId()));
                 break;
             case CANCEL_PRAISE:
                 foot = (UserFootDO) msgEvent.getContent();
-                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setPraise(false).setArticleId(foot.getDocumentId()));
+                userActivityRankService.addActivityScore(ReqInfoContext.getReqInfo().getUserId(), new ActivityScoreBo().setPraise(false).setArticleId(foot.getArticleId()));
                 break;
             case FOLLOW:
                 UserRelationDO relation = (UserRelationDO) msgEvent.getContent();

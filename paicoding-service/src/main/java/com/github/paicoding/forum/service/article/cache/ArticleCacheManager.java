@@ -7,7 +7,6 @@ import com.github.paicoding.forum.api.model.vo.comment.dto.TopCommentDTO;
 import com.github.paicoding.forum.api.model.vo.recommend.SideBarDTO;
 import com.github.paicoding.forum.core.cache.RedisClient;
 import com.github.paicoding.forum.core.config.ArticleCacheProperties;
-import com.github.paicoding.forum.service.article.repository.entity.ColumnArticleDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -64,30 +63,9 @@ public class ArticleCacheManager {
         return RedisClient.zIncrBy(ARTICLE_SCORE_PREFIX, String.valueOf(articleId), score);
     }
 
-    public boolean isArticleColumnArticleExist(long articleId){
-        return RedisClient.exists(ARTICLE_COLUMN_RELATION_PREFIX + articleId);
-    }
-
-    public void setColumnArticle(long articleId, ColumnArticleDO columnArticleDO){
-        RedisClient.setObject(ARTICLE_COLUMN_RELATION_PREFIX + articleId, columnArticleDO);
-    }
-
-    public ColumnArticleDO getColumnArticle(long articleId) {
-        Object value = RedisClient.getObject(ARTICLE_COLUMN_RELATION_PREFIX + articleId);
-        if(value != null){
-            return OBJECT_MAPPER.convertValue(value, ColumnArticleDO.class);
-        }
-        return null;
-    }
 
 
     public ArticleDTO getArticleInfo(long articleId) {
-//        String str = RedisClient.getStr(ARTICLE_INFO_PREFIX + articleId);
-//        try {
-//            return str == null ? null : OBJECT_MAPPER.readValue(str, ArticleDTO.class);
-//        } catch (JsonProcessingException e) {
-//            throw new RuntimeException(e);
-//        }
         Object value = RedisClient.getObject(ARTICLE_INFO_PREFIX + articleId);
         if(value != null){
             return OBJECT_MAPPER.convertValue(value, ArticleDTO.class);
@@ -97,11 +75,6 @@ public class ArticleCacheManager {
 
     public void setArticleInfo(long articleId, ArticleDTO articleDTO){
         RedisClient.setObject(ARTICLE_INFO_PREFIX + articleId, articleDTO);
-//        try {
-//            RedisClient.setStr(ARTICLE_INFO_PREFIX + articleId, OBJECT_MAPPER.writeValueAsString(articleDTO));
-//        } catch (JsonProcessingException e) {
-//            throw new RuntimeException(e);
-//        }
     }
 
     /**
@@ -112,7 +85,6 @@ public class ArticleCacheManager {
      */
     public TopCommentDTO getHotComment(long articleId) throws JsonProcessingException {
         String hotCommentStr = RedisClient.getStr(ARTICLE_HOT_COMMENT_PREFIX + articleId);
-
         return OBJECT_MAPPER.readValue(hotCommentStr, TopCommentDTO.class);
     }
 

@@ -24,9 +24,7 @@ import java.util.Optional;
 public class UserFootDao extends ServiceImpl<UserFootMapper, UserFootDO> {
     public UserFootDO getByDocumentAndUserId(Long documentId, Integer type, Long userId) {
         LambdaQueryWrapper<UserFootDO> query = Wrappers.lambdaQuery();
-        query.eq(UserFootDO::getDocumentId, documentId)
-                .eq(UserFootDO::getDocumentType, type)
-                .eq(UserFootDO::getUserId, userId);
+        query.eq(UserFootDO::getArticleId, documentId).eq(UserFootDO::getUserId, userId);
         return baseMapper.selectOne(query);
     }
 
@@ -88,8 +86,8 @@ public class UserFootDao extends ServiceImpl<UserFootMapper, UserFootDO> {
      */
     public Long countCommentPraise(Long commentId) {
         return lambdaQuery()
-                .eq(UserFootDO::getDocumentId, commentId)
-                .eq(UserFootDO::getDocumentType, DocumentTypeEnum.COMMENT.getCode())
+                .eq(UserFootDO::getArticleId, commentId)
+                .eq(UserFootDO::getType, DocumentTypeEnum.COMMENT.getCode())
                 .eq(UserFootDO::getPraiseStat, PraiseStatEnum.PRAISE.getCode())
                 .count();
     }

@@ -3,7 +3,6 @@ package com.github.paicoding.forum.service.image.oss.impl;
 import com.github.paicoding.forum.core.config.ImageProperties;
 import com.github.paicoding.forum.core.net.HttpRequestHelper;
 import com.github.paicoding.forum.core.util.JsonUtil;
-import com.github.paicoding.forum.core.util.StopWatchUtil;
 import com.github.paicoding.forum.service.image.oss.ImageUploader;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -30,21 +29,21 @@ public class RestOssWrapper implements ImageUploader {
 
     @Override
     public String upload(InputStream input, String fileType) {
-        StopWatchUtil stopWatchUtil = StopWatchUtil.init("图片上传");
         try {
-            byte[] bytes = stopWatchUtil.record("转字节", () -> StreamUtils.copyToByteArray(input));
-            String res = stopWatchUtil.record("上传", () -> HttpRequestHelper.upload(properties.getOss().getEndpoint(), "image", "img." + fileType, bytes));
+            // 将输入流转化为字节数组
+            byte[] bytes = StreamUtils.copyToByteArray(input);
+            // 上传图片
+            String res = HttpRequestHelper.
+                    upload(properties.getOss().getEndpoint(), "image", "img." + fileType, bytes);
+            // 解析返回结果并获取图片路径
             HashMap<?, ?> map = JsonUtil.toObj(res, HashMap.class);
             return (String) ((Map<?, ?>) map.get("result")).get("imagePath");
         } catch (Exception e) {
             log.error("upload image error response! uri:{}", properties.getOss().getEndpoint(), e);
             return null;
-        } finally {
-            if (log.isDebugEnabled()) {
-                log.debug("upload Image cost: {}", stopWatchUtil.prettyPrint());
-            }
         }
     }
+
 
     @Override
     public boolean uploadIgnore(String fileUrl) {

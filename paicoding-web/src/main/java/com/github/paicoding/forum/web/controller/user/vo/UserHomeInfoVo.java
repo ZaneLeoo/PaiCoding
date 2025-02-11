@@ -5,6 +5,7 @@ import com.github.paicoding.forum.api.model.vo.article.dto.ArticleDTO;
 import com.github.paicoding.forum.api.model.vo.article.dto.TagSelectDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.FollowUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserStatisticInfoDTO;
+import com.github.paicoding.forum.service.article.repository.entity.ArticleItemDo;
 import lombok.Data;
 
 import java.util.List;
@@ -34,15 +35,11 @@ public class UserHomeInfoVo {
     /**
      * 文章列表
      */
-    private IPage<ArticleDTO> articlesList;
+    private List<ArticleItemDo> articlesList;
 
     /**
-     * 浏览记录
+     * 点赞文章列表
      */
-    private IPage<ArticleDTO> historyList;
+    private List<ArticleItemDo> likedArticlesList;
 
-    /**
-     * 浏览记录
-     */
-    private IPage<ArticleDTO> starList;
 }

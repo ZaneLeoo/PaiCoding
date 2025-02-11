@@ -6,7 +6,6 @@ import com.github.paicoding.forum.api.model.exception.ExceptionUtil;
 import com.github.paicoding.forum.api.model.vo.constants.StatusEnum;
 import com.github.paicoding.forum.core.async.AsyncExecute;
 import com.github.paicoding.forum.core.async.AsyncUtil;
-import com.github.paicoding.forum.core.mdc.MdcDot;
 import com.github.paicoding.forum.core.util.MdImgLoader;
 import com.github.paicoding.forum.service.image.oss.ImageUploader;
 import com.google.common.cache.CacheBuilder;
@@ -22,14 +21,18 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 /**
  * @author XuYifei
@@ -129,7 +132,6 @@ public class ImageServiceImpl implements ImageService {
      * @return
      */
     @Override
-    @MdcDot
     @AsyncExecute(timeOutRsp = "#content")
     public String mdImgReplace(String content) {
         List<MdImgLoader.MdImg> imgList = MdImgLoader.loadImgs(content);
@@ -144,17 +146,16 @@ public class ImageServiceImpl implements ImageService {
             return StringUtils.replace(content, img.getOrigin(), "![" + img.getDesc() + "](" + newImg + ")");
         }
 
-        // 超过1张图片时，做并发的图片转存，提升性能
+        // 超过1张图片时,做并发的图片转存,提升性能
         Map<MdImgLoader.MdImg, String> imgReplaceMap = Maps.newHashMapWithExpectedSize(imgList.size());
-        try(AsyncUtil.CompletableFutureBridge bridge = AsyncUtil.concurrentExecutor("MdImgReplace")) {
-            for (MdImgLoader.MdImg img : imgList) {
-                bridge.async(() -> {
-                    imgReplaceMap.put(img, saveImg(img.getUrl()));
-                }, img.getUrl());
-            }
-            bridge.allExecuted();
-        }
 
+        // 使用 AsyncUtil.execute 方法并行执行异步任务
+        List<Runnable> tasks = imgList.stream()
+                .map(img -> (Runnable) () -> imgReplaceMap.put(img, saveImg(img.getUrl())))
+                .collect(Collectors.toList());
+
+        // 并发执行任务
+        tasks.forEach(AsyncUtil::execute);
         // 图片替换
         for (Map.Entry<MdImgLoader.MdImg, String> entry : imgReplaceMap.entrySet()) {
             MdImgLoader.MdImg img = entry.getKey();
@@ -190,4 +191,6 @@ public class ImageServiceImpl implements ImageService {
         }
         return null;
     }
+
+
 }

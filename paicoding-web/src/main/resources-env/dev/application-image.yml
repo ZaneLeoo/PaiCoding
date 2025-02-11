@@ -1,7 +1,8 @@
 image:
-  abs-tmp-path: /tmp/storage/
+  abs-tmp-path: D:/Server_Data/Paicoding/Image/
   web-img-path: /forum/image/
   tmp-upload-path: /tmp/forum/
+
   cdn-host:
   oss:
     type: local

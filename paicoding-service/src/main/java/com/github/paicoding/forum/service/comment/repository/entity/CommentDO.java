@@ -1,52 +1,29 @@
 package com.github.paicoding.forum.service.comment.repository.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.github.paicoding.forum.api.model.entity.BaseDO;
-import com.github.paicoding.forum.core.senstive.ano.SensitiveField;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
-/**
- * 评论表
- *
- * @author XuYifei
- * @date 2024-07-12
- */
-@Data
-@EqualsAndHashCode(callSuper = true)
+import java.util.List;
+
 @TableName("comment")
-public class CommentDO extends BaseDO {
-
-    private static final long serialVersionUID = 1L;
-
-    /**
-     * 文章ID
-     */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CommentDO {
+    @TableId(type = IdType.AUTO)
+    private Long id;
     private Long articleId;
-
-    /**
-     * 用户ID
-     */
     private Long userId;
-
-    /**
-     * 评论内容
-     */
-    @SensitiveField(bind = "content")
     private String content;
-
-    /**
-     * 父评论ID
-     */
     private Long parentCommentId;
-
-    /**
-     * 顶级评论ID
-     */
-    private Long topCommentId;
-
-    /**
-     * 0未删除 1 已删除
-     */
+    private Integer likes;
     private Integer deleted;
+
+    @TableField(exist = false)
+    private List<CommentDO> replies;  // 子评论
 }

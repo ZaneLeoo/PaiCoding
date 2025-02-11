@@ -14,32 +14,56 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 /**
- * @author XuYifei
- * @date 2024-07-12
+ * JsonUtil 类提供了一些实用方法，用于将 Java 对象与 JSON 字符串进行相互转换，
+ * 以及自定义一些特殊类型（如 long, BigDecimal, BigInteger 等）的 JSON 序列化规则。
+ *
+ * 主要功能：
+ * 1. 提供对象与 JSON 字符串的相互转换；
+ * 2. 针对大数字类型（如 Long、BigDecimal）提供自定义序列化，避免 JavaScript 中精度丢失；
+ * 3. 支持自定义序列化模块，便于在项目中扩展自定义的序列化需求。
  */
 public class JsonUtil {
 
     private static final ObjectMapper jsonMapper = new ObjectMapper();
 
-    public static  <T> T toObj(String str, Class<T> clz) {
+    /**
+     * 将 JSON 字符串转换为指定类型的 Java 对象
+     *
+     * @param str JSON 字符串
+     * @param clz 要转换成的目标类型
+     * @param <T> 目标类型
+     * @return 转换后的 Java 对象
+     * @throws UnsupportedOperationException 如果 JSON 解析失败，则抛出异常
+     */
+    public static <T> T toObj(String str, Class<T> clz) {
         try {
             return jsonMapper.readValue(str, clz);
         } catch (Exception e) {
-            throw new UnsupportedOperationException(e);
-        }
-    }
-
-    public static <T> String toStr(T t) {
-        try {
-            return jsonMapper.writeValueAsString(t);
-        } catch (Exception e) {
-            throw new UnsupportedOperationException(e);
+            throw new UnsupportedOperationException("Error while converting JSON to object", e);
         }
     }
 
     /**
-     * 序列换成json时,将所有的long变成string
-     * 因为js中得数字类型不能包含所有的java long值
+     * 将 Java 对象转换为 JSON 字符串
+     *
+     * @param t Java 对象
+     * @param <T> Java 对象类型
+     * @return 转换后的 JSON 字符串
+     * @throws UnsupportedOperationException 如果对象序列化失败，则抛出异常
+     */
+    public static <T> String toStr(T t) {
+        try {
+            return jsonMapper.writeValueAsString(t);
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("Error while converting object to JSON", e);
+        }
+    }
+
+    /**
+     * 创建一个 Jackson 序列化模块，用于将 Long、BigDecimal、BigInteger 等类型序列化为字符串，
+     * 以避免在 JavaScript 中出现精度丢失的问题。
+     *
+     * @return 自定义的 SimpleModule
      */
     public static SimpleModule bigIntToStrsimpleModule() {
         SimpleModule simpleModule = new SimpleModule();
@@ -54,6 +78,15 @@ public class JsonUtil {
         return simpleModule;
     }
 
+    /**
+     * 根据传入的函数创建一个通用的 JSON 序列化器，
+     * 用于将指定类型的对象转换为字符串（可用于单一对象或数组）。
+     *
+     * @param func 转换函数，将对象转换为字符串
+     * @param <T> 对象类型
+     * @param <K> 被转换的目标类型
+     * @return 自定义的 JsonSerializer
+     */
     public static <T, K> JsonSerializer<T> newSerializer(Function<K, String> func) {
         return new JsonSerializer<T>() {
             @Override
@@ -69,7 +102,7 @@ public class JsonUtil {
                         try {
                             jsonGenerator.writeString(func.apply((K) s));
                         } catch (IOException e) {
-                            throw new RuntimeException(e);
+                            throw new RuntimeException("Error serializing array element", e);
                         }
                     });
                     jsonGenerator.writeEndArray();

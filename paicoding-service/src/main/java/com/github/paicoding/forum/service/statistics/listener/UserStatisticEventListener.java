@@ -1,5 +1,6 @@
 package com.github.paicoding.forum.service.statistics.listener;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.paicoding.forum.api.model.enums.ArticleEventEnum;
 import com.github.paicoding.forum.api.model.event.ArticleMsgEvent;
 import com.github.paicoding.forum.api.model.vo.notify.NotifyMsgEvent;
@@ -48,23 +49,23 @@ public class UserStatisticEventListener {
                 break;
             case COLLECT:
                 UserFootDO foot = (UserFootDO) msgEvent.getContent();
-                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getDocumentUserId(), CountConstants.COLLECTION_COUNT, 1);
-                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getDocumentId(), CountConstants.COLLECTION_COUNT, 1);
+                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getArticleAuthorId(), CountConstants.COLLECTION_COUNT, 1);
+                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getArticleId(), CountConstants.COLLECTION_COUNT, 1);
                 break;
             case CANCEL_COLLECT:
                 foot = (UserFootDO) msgEvent.getContent();
-                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getDocumentUserId(), CountConstants.COLLECTION_COUNT, -1);
-                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getDocumentId(), CountConstants.COLLECTION_COUNT, -1);
+                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getArticleAuthorId(), CountConstants.COLLECTION_COUNT, -1);
+                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getArticleId(), CountConstants.COLLECTION_COUNT, -1);
                 break;
             case PRAISE:
                 foot = (UserFootDO) msgEvent.getContent();
-                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getDocumentUserId(), CountConstants.PRAISE_COUNT, 1);
-                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getDocumentId(), CountConstants.PRAISE_COUNT, 1);
+                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getArticleAuthorId(), CountConstants.PRAISE_COUNT, 1);
+                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getArticleId(), CountConstants.PRAISE_COUNT, 1);
                 break;
             case CANCEL_PRAISE:
                 foot = (UserFootDO) msgEvent.getContent();
-                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getDocumentUserId(), CountConstants.PRAISE_COUNT, -1);
-                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getDocumentId(), CountConstants.PRAISE_COUNT, -1);
+                RedisClient.hIncr(CountConstants.USER_STATISTIC_INFO + foot.getArticleAuthorId(), CountConstants.PRAISE_COUNT, -1);
+                RedisClient.hIncr(CountConstants.ARTICLE_STATISTIC_INFO + foot.getArticleId(), CountConstants.PRAISE_COUNT, -1);
                 break;
             case FOLLOW:
                 UserRelationDO relation = (UserRelationDO) msgEvent.getContent();
@@ -95,7 +96,7 @@ public class UserStatisticEventListener {
         ArticleEventEnum type = event.getType();
         if (type == ArticleEventEnum.ONLINE || type == ArticleEventEnum.OFFLINE || type == ArticleEventEnum.DELETE) {
             Long userId = event.getContent().getUserId();
-            int count = articleDao.countArticleByUser(userId);
+            int count = (int)articleDao.count(new QueryWrapper<ArticleDO>().eq("user_id",userId));
             RedisClient.hSet(CountConstants.USER_STATISTIC_INFO + userId, CountConstants.ARTICLE_COUNT, count);
         }
     }

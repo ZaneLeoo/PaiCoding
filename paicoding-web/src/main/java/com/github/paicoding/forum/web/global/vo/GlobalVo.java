@@ -1,9 +1,6 @@
 package com.github.paicoding.forum.web.global.vo;
 
-import com.github.paicoding.forum.api.model.vo.seo.SeoTagVo;
 import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
-import com.github.paicoding.forum.service.sitemap.model.SiteCntVo;
-import com.github.paicoding.forum.web.config.GlobalViewConfig;
 import lombok.Data;
 
 import java.util.List;
@@ -14,19 +11,6 @@ import java.util.List;
  */
 @Data
 public class GlobalVo {
-    /**
-     * 网站相关配置
-     */
-    private GlobalViewConfig siteInfo;
-    /**
-     * 站点统计信息
-     */
-    private SiteCntVo siteStatisticInfo;
-
-    /**
-     * 今日的站点统计想你洗
-     */
-    private SiteCntVo todaySiteStatisticInfo;
 
     /**
      * 环境
@@ -55,7 +39,6 @@ public class GlobalVo {
 
     private String currentDomain;
 
-    private List<SeoTagVo> ogp;
     private String jsonLd;
 
 }

@@ -23,42 +23,6 @@ import java.util.List;
 @Configuration
 public class PaiWebConfig implements WebMvcConfigurer {
 
-//    @PostConstruct
-//    private void init() {
-//        log.info("PaiWebConfig init...");
-//        // 通过templateEngine获取SpringStandardDialect
-//        SpringStandardDialect springStandardDialect = CollectionUtils.findValueOfType(templateEngine.getDialects(), SpringStandardDialect.class);
-//        IStandardJavaScriptSerializer standardJavaScriptSerializer = springStandardDialect.getJavaScriptSerializer();
-//        // 反射获取 IStandardJavaScriptSerializer
-//        Field delegateField = ReflectionUtils.findField(standardJavaScriptSerializer.getClass(), "delegate");
-//        if (delegateField == null) {
-//            log.warn("WebConfig init, failed set jackson module, delegateField is null");
-//            return;
-//        }
-//        ReflectionUtils.makeAccessible(delegateField);
-//        Object delegate = ReflectionUtils.getField(delegateField, standardJavaScriptSerializer);
-//        if (delegate == null) {
-//            log.warn("WebConfig init, failed set jackson module, delegateField is null");
-//            return;
-//        }
-//        // 如果代理类是JacksonStandardJavaScriptSerializer,则获取mapper,设置model
-//        if (Objects.equals("JacksonStandardJavaScriptSerializer", delegate.getClass().getSimpleName())) {
-//            Field mapperField = ReflectionUtils.findField(delegate.getClass(), "mapper");
-//            if (mapperField == null) {
-//                log.warn("WebConfig init, failed set jackson module, mapperField is null");
-//                return;
-//            }
-//            ReflectionUtils.makeAccessible(mapperField);
-//            ObjectMapper objectMapper = (ObjectMapper) ReflectionUtils.getField(mapperField, delegate);
-//            if (objectMapper == null) {
-//                log.warn("WebConfig init, filed set jackson module, mapper is null");
-//                return;
-//            }
-//            // 设置序列化Module,修改long型序列化为字符串
-//            objectMapper.registerModule(JsonUtil.bigIntToStrsimpleModule());
-//            log.info("WebConfig init 设置jackson序列化long为字符串成功!!!");
-//        }
-//    }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

@@ -3,6 +3,7 @@ package com.github.paicoding.forum.service.article.service;
 import com.github.paicoding.forum.api.model.vo.PageParam;
 import com.github.paicoding.forum.api.model.vo.PageVo;
 import com.github.paicoding.forum.api.model.vo.article.dto.TagDTO;
+import com.github.paicoding.forum.service.article.repository.entity.TagDO;
 
 import java.util.List;
 
@@ -14,11 +15,6 @@ import java.util.List;
  */
 public interface TagService {
 
-    PageVo<TagDTO> queryTags(String key, PageParam pageParam);
+    List<TagDO> queryTags();
 
-    Long queryTagId(String tag);
-
-    List<TagDTO> listAllUndeletedTags();
-
-    List<TagDTO> listTagsCategory(Long categoryId);
 }

@@ -1,6 +1,7 @@
 package com.github.paicoding.forum.service.article.service;
 
 import com.github.paicoding.forum.api.model.vo.article.ArticlePostReq;
+import com.github.paicoding.forum.service.article.repository.entity.ArticleDO;
 
 public interface ArticleWriteService {
 
@@ -20,4 +21,14 @@ public interface ArticleWriteService {
      * @param loginUserId 执行操作的用户
      */
     void deleteArticle(Long articleId, Long loginUserId);
+
+    /**
+     * 文章阅读+1
+     * @param articleId
+     */
+    void addArticleViews(Long articleId);
+
+    void updateArticle(ArticleDO article);
+
+
 }

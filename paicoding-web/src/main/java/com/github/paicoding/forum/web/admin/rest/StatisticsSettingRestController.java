@@ -8,6 +8,7 @@ import com.github.paicoding.forum.core.permission.UserRole;
 import com.github.paicoding.forum.service.statistics.service.StatisticsSettingService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,8 +25,14 @@ import java.util.List;
 @RequestMapping(path = {"api/admin/statistics/", "admin/statistics/"})
 public class StatisticsSettingRestController {
 
-    @Autowired
+
     private StatisticsSettingService statisticsSettingService;
+
+    @Lazy
+    @Autowired
+    public void setStatisticsSettingService(StatisticsSettingService statisticsSettingService) {
+        this.statisticsSettingService = statisticsSettingService;
+    }
 
     static final Integer DEFAULT_DAY = 7;
 

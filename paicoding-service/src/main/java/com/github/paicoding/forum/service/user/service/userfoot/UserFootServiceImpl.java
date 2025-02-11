@@ -12,6 +12,7 @@ import com.github.paicoding.forum.service.user.repository.dao.UserFootDao;
 import com.github.paicoding.forum.service.user.repository.entity.UserFootDO;
 import com.github.paicoding.forum.service.user.service.UserFootService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -28,17 +29,29 @@ import java.util.function.Supplier;
  */
 @Service
 public class UserFootServiceImpl implements UserFootService {
-    private final UserFootDao userFootDao;
 
-    @Autowired
+    private UserFootDao userFootDao;
     private ArticleReadService articleReadService;
-
-    @Autowired
     private CommentReadService commentReadService;
 
-    public UserFootServiceImpl(UserFootDao userFootDao) {
+    @Autowired
+    public void setUserFootDao(UserFootDao userFootDao) {
         this.userFootDao = userFootDao;
     }
+
+    @Lazy
+    @Autowired
+    public void setArticleReadService(ArticleReadService articleReadService) {
+        this.articleReadService = articleReadService;
+    }
+
+    @Lazy
+    @Autowired
+    public void setCommentReadService(CommentReadService commentReadService) {
+        this.commentReadService = commentReadService;
+    }
+
+
 
     /**
      * 保存或更新状态信息
@@ -50,15 +63,16 @@ public class UserFootServiceImpl implements UserFootService {
      * @param operateTypeEnum 操作类型：点赞，评论，收藏等
      */
     @Override
-    public UserFootDO saveOrUpdateUserFoot(DocumentTypeEnum documentType, Long documentId, Long authorId, Long userId, OperateTypeEnum operateTypeEnum) {
+    public UserFootDO saveOrUpdateUserFoot(DocumentTypeEnum documentType, Long documentId, Long authorId,
+                                           Long userId, OperateTypeEnum operateTypeEnum) {
         // 查询是否有该足迹；有则更新，没有则插入
         UserFootDO readUserFootDO = userFootDao.getByDocumentAndUserId(documentId, documentType.getCode(), userId);
         if (readUserFootDO == null) {
             readUserFootDO = new UserFootDO();
             readUserFootDO.setUserId(userId);
-            readUserFootDO.setDocumentId(documentId);
-            readUserFootDO.setDocumentType(documentType.getCode());
-            readUserFootDO.setDocumentUserId(authorId);
+            readUserFootDO.setArticleId(documentId);
+            readUserFootDO.setType(documentType.getCode());
+            readUserFootDO.setArticleAuthorId(authorId);
             setUserFootStat(readUserFootDO, operateTypeEnum);
             userFootDao.save(readUserFootDO);
         } else if (setUserFootStat(readUserFootDO, operateTypeEnum)) {
@@ -72,20 +86,24 @@ public class UserFootServiceImpl implements UserFootService {
     @Override
     public void saveCommentFoot(CommentDO comment, Long articleAuthor, Long parentCommentAuthor) {
         // 保存文章对应的评论足迹
-        saveOrUpdateUserFoot(DocumentTypeEnum.ARTICLE, comment.getArticleId(), articleAuthor, comment.getUserId(), OperateTypeEnum.COMMENT);
+        saveOrUpdateUserFoot(DocumentTypeEnum.ARTICLE, comment.getArticleId(),
+                articleAuthor, comment.getUserId(), OperateTypeEnum.COMMENT);
         // 如果是子评论，则找到父评论的记录，然后设置为已评
         if (comment.getParentCommentId() != null && comment.getParentCommentId() != 0) {
             // 如果需要展示父评论的子评论数量，authorId 需要传父评论的 userId
-            saveOrUpdateUserFoot(DocumentTypeEnum.COMMENT, comment.getParentCommentId(), parentCommentAuthor, comment.getUserId(), OperateTypeEnum.COMMENT);
+            saveOrUpdateUserFoot(DocumentTypeEnum.COMMENT, comment.getParentCommentId(),
+                    parentCommentAuthor, comment.getUserId(), OperateTypeEnum.COMMENT);
         }
     }
 
     @Override
     public void removeCommentFoot(CommentDO comment, Long articleAuthor, Long parentCommentAuthor) {
-        saveOrUpdateUserFoot(DocumentTypeEnum.ARTICLE, comment.getArticleId(), articleAuthor, comment.getUserId(), OperateTypeEnum.DELETE_COMMENT);
+        saveOrUpdateUserFoot(DocumentTypeEnum.ARTICLE, comment.getArticleId(),
+                articleAuthor, comment.getUserId(), OperateTypeEnum.DELETE_COMMENT);
         if (comment.getParentCommentId() != null) {
             // 如果需要展示父评论的子评论数量，authorId 需要传父评论的 userId
-            saveOrUpdateUserFoot(DocumentTypeEnum.COMMENT, comment.getParentCommentId(), parentCommentAuthor, comment.getUserId(), OperateTypeEnum.DELETE_COMMENT);
+            saveOrUpdateUserFoot(DocumentTypeEnum.COMMENT, comment.getParentCommentId(),
+                    parentCommentAuthor, comment.getUserId(), OperateTypeEnum.DELETE_COMMENT);
         }
     }
 
@@ -101,8 +119,6 @@ public class UserFootServiceImpl implements UserFootService {
             case CANCEL_PRAISE:
                 return compareAndUpdate(userFootDO::getPraiseStat, userFootDO::setPraiseStat, operate.getDbStatCode());
             case COLLECTION:
-            case CANCEL_COLLECTION:
-                return compareAndUpdate(userFootDO::getCollectionStat, userFootDO::setCollectionStat, operate.getDbStatCode());
             case COMMENT:
             case DELETE_COMMENT:
                 return compareAndUpdate(userFootDO::getCommentStat, userFootDO::setCommentStat, operate.getDbStatCode());

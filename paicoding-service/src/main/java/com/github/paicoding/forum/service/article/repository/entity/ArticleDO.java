@@ -1,33 +1,31 @@
 package com.github.paicoding.forum.service.article.repository.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.github.paicoding.forum.api.model.entity.BaseDO;
-import com.github.paicoding.forum.api.model.enums.PushStatusEnum;
-import com.github.paicoding.forum.api.model.enums.SourceTypeEnum;
+
+
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 /**
- * 文章表
- *
- * @author XuYifei
- * @date 2024-07-12
+ * 文章实体类，映射到 article 表
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
+@NoArgsConstructor
 @TableName("article")
-public class ArticleDO extends BaseDO {
-    private static final long serialVersionUID = 1L;
+public class ArticleDO {
 
     /**
-     * 作者
+     * 文章 ID，主键
+     */
+    @TableId(type = IdType.AUTO)
+    private Long id;
+
+    /**
+     * 用户 ID，关联到用户表
      */
     private Long userId;
-
-    /**
-     * 文章类型：1-博文，2-问答, 3-专栏文章
-     */
-    private Integer articleType;
 
     /**
      * 文章标题
@@ -35,58 +33,49 @@ public class ArticleDO extends BaseDO {
     private String title;
 
     /**
-     * 短标题
-     */
-    private String shortTitle;
-
-    /**
-     * 文章头图
-     */
-    private String picture;
-
-    /**
      * 文章摘要
      */
     private String summary;
 
     /**
-     * 类目ID
+     * 文章点赞数
      */
-    private Long categoryId;
+    private Integer likes;
 
     /**
-     * 来源：1-转载，2-原创，3-翻译
-     *
-     * @see SourceTypeEnum
+     * 文章浏览数
      */
-    private Integer source;
+    private Integer views;
 
     /**
-     * 原文地址
+     * 文章评论数量
      */
-    private String sourceUrl;
+    private Integer comments;
 
     /**
-     * 状态：0-未发布，1-已发布
-     *
-     * @see PushStatusEnum
+     * 文章发布状态
+     * 0 未发布
+     * 1 已发布
      */
     private Integer status;
+    /**
+     * 创建时间
+     */
+    private LocalDateTime createTime;
 
     /**
-     * 是否官方
+     * 更新时间
      */
-    private Integer officalStat;
+    private LocalDateTime updateTime;
 
     /**
-     * 是否置顶
+     * 文章封面图 URL
      */
-    private Integer toppingStat;
+    private String cover;
 
     /**
-     * 是否加精
+     * 文章是否已删除
      */
-    private Integer creamStat;
+    private Boolean deleted;
 
-    private Integer deleted;
 }

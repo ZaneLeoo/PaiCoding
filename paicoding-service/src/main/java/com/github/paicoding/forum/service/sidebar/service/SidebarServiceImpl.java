@@ -13,6 +13,7 @@ import com.github.paicoding.forum.api.model.vo.recommend.SideBarDTO;
 import com.github.paicoding.forum.api.model.vo.recommend.SideBarItemDTO;
 import com.github.paicoding.forum.core.util.JsonUtil;
 import com.github.paicoding.forum.service.article.repository.dao.ArticleDao;
+import com.github.paicoding.forum.service.article.repository.entity.ArticleDO;
 import com.github.paicoding.forum.service.article.service.ArticleReadService;
 import com.github.paicoding.forum.service.config.service.ConfigService;
 import com.github.paicoding.forum.service.rank.service.UserActivityRankService;
@@ -125,9 +126,10 @@ public class SidebarServiceImpl implements SidebarService {
      * @return
      */
     private SideBarDTO hotArticles() {
-        PageListVo<SimpleArticleDTO> vo = articleReadService.queryHotArticlesForRecommend(PageParam.newPageInstance(1, 8));
-        List<SideBarItemDTO> items = vo.getList().stream().map(s -> new SideBarItemDTO().setTitle(s.getTitle()).setUrl("/article/detail/" + s.getId()).setTime(s.getCreateTime().getTime())).collect(Collectors.toList());
-        return new SideBarDTO().setTitle("热门文章").setItems(items).setStyle(SidebarStyleEnum.ARTICLES.getStyle());
+//        PageListVo<SimpleArticleDTO> vo = articleReadService.queryHotArticlesForRecommend(PageParam.newPageInstance(1, 8));
+//        List<SideBarItemDTO> items = vo.getList().stream().map(s -> new SideBarItemDTO().setTitle(s.getTitle()).setUrl("/article/detail/" + s.getId()).setTime(s.getCreateTime().getTime())).collect(Collectors.toList());
+//        return new SideBarDTO().setTitle("热门文章").setItems(items).setStyle(SidebarStyleEnum.ARTICLES.getStyle());
+        return null;
     }
 
 
@@ -186,11 +188,11 @@ public class SidebarServiceImpl implements SidebarService {
      * @return
      */
     public SideBarDTO recommendByAuthor(Long authorId, Long articleId, long size) {
-        List<SimpleArticleDTO> list = articleDao.listAuthorHotArticles(authorId, PageParam.newPageInstance(PageParam.DEFAULT_PAGE_NUM, size));
+        List<ArticleDO> list = articleDao.getArticlesByUserId(authorId);
         List<SideBarItemDTO> items = list.stream().filter(s -> !s.getId().equals(articleId))
                 .map(s -> new SideBarItemDTO()
                         .setTitle(s.getTitle()).setUrl("/article/detail/" + s.getId())
-                        .setTime(s.getCreateTime().getTime()))
+                        .setTime(112L))// todo
                 .collect(Collectors.toList());
         return new SideBarDTO().setTitle("相关文章").setItems(items).setStyle(SidebarStyleEnum.ARTICLES.getStyle());
     }

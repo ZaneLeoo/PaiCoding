@@ -5,18 +5,14 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.github.paicoding.forum.core.cache.RedisClient;
-import com.github.paicoding.forum.core.mdc.SelfTraceIdGenerator;
 import com.github.paicoding.forum.core.util.JsonUtil;
 import com.github.paicoding.forum.core.util.MapUtils;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
-import org.springframework.util.Base64Utils;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * 使用jwt来存储用户token，则不需要后端来存储session了
@@ -58,7 +54,7 @@ public class UserSessionHelper {
 
     public String genToken(Long userId) {
         // 1.生成jwt格式的会话，内部持有有效期，用户信息
-        String session = JsonUtil.toStr(MapUtils.create("s", SelfTraceIdGenerator.generate(), "u", userId));
+        String session = JsonUtil.toStr(MapUtils.create("s", UUID.randomUUID().toString(), "u", userId));  // 使用UUID代替
         String token = JWT.create().withIssuer(jwtProperties.getIssuer()).withExpiresAt(new Date(System.currentTimeMillis() + jwtProperties.getExpire()))
                 .withPayload(session)
                 .sign(algorithm);
@@ -68,6 +64,7 @@ public class UserSessionHelper {
         RedisClient.setStrWithExpire(token, String.valueOf(userId), jwtProperties.getExpire() / 1000);
         return token;
     }
+
 
     public void removeSession(String session) {
         RedisClient.del(session);
@@ -83,7 +80,7 @@ public class UserSessionHelper {
         // jwt的校验方式，如果token非法或者过期，则直接验签失败
         try {
             DecodedJWT decodedJWT = verifier.verify(session);
-            String pay = new String(Base64Utils.decodeFromString(decodedJWT.getPayload()));
+            String pay = new String(Base64.getDecoder().decode(decodedJWT.getPayload()));
             // jwt验证通过，获取对应的userId
             String userId = String.valueOf(JsonUtil.toObj(pay, HashMap.class).get("u"));
 

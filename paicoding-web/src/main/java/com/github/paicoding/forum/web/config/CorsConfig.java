@@ -1,6 +1,8 @@
 package com.github.paicoding.forum.web.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @program: tech-pai
@@ -10,19 +12,14 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-public class CorsConfig {
+public class CorsConfig implements WebMvcConfigurer {
 
-//    @Bean
-//    public CorsFilter corsFilter() {
-//        CorsConfiguration config = new CorsConfiguration();
-//        config.setAllowCredentials(true);
-//        config.addAllowedOriginPattern("*"); // 允许所有来源，但会根据请求的 Origin 动态设置
-//        config.addAllowedHeader("*");
-//        config.addAllowedMethod("*");
-//        config.setExposedHeaders(List.of("Set-Cookie"));
-//
-//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-//        source.registerCorsConfiguration("/**", config);
-//        return new CorsFilter(source);
-//    }
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("http://localhost:5173")  // 允许的前端地址
+                .allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedHeaders("*")
+                .allowCredentials(true);  // 允许发送凭证
+    }
 }

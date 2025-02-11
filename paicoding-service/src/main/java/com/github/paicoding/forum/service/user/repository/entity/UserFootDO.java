@@ -24,23 +24,19 @@ public class UserFootDO extends BaseDO {
     private Long userId;
 
     /**
-     * 文档ID（文章/评论）
+     * 记录类型 1表示文章  2表示评论
      */
-    private Long documentId;
+    private Integer type;
 
     /**
-     * 文档类型：1-文章，2-评论
+     * 文档ID（文章/评论）
      */
-    private Integer documentType;
+    private Long articleId;
+
     /**
      * 发布该文档的用户ID
      */
-    private Long documentUserId;
-    /**
-     * 收藏状态: 0-未收藏，1-已收藏
-     */
-    private Integer collectionStat;
-
+    private Long articleAuthorId;
     /**
      * 阅读状态: 0-未读，1-已读
      */

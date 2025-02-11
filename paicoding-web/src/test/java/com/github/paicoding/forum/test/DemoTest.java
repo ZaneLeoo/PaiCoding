@@ -15,138 +15,77 @@ import java.util.concurrent.TimeoutException;
 import java.util.function.BiConsumer;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
-
+import java.util.*;
+import java.util.stream.Collectors;
 /**
  * @author XuYifei
  * @date 2024-07-12
  */
 public class DemoTest {
 
-    @Test
-    public void testTime() {
-        long now = System.currentTimeMillis();
-        LocalDateTime local = DateUtil.time2LocalTime(now);
-        System.out.println(local);
+        public static void main(String[] args) {
+            // 示例数据
+            List<CommentDO> comments = Arrays.asList(
+                    new CommentDO(1L, 0L, "Root Comment 1"),
+                    new CommentDO(2L, 0L, "Root Comment 2"),
+                    new CommentDO(3L, 1L, "Reply to Comment 1 - 1"),
+                    new CommentDO(4L, 1L, "Reply to Comment 1 - 2"),
+                    new CommentDO(5L, 2L, "Reply to Comment 2 - 1"),
+                    new CommentDO(6L, 3L, "Reply to Comment 3 - 1"),
+                    new CommentDO(7L, 3L, "Reply to Comment 3 - 2"),
+                    new CommentDO(8L, 4L, "Reply to Comment 4 - 1")
+            );
 
-        System.out.println(DateUtil.time2utc(now));
-        System.out.println("over");
-    }
+            // 按 parentCommentId 分组
+            Map<Long, List<CommentDO>> groupedComments = comments.stream()
+                    .collect(Collectors.groupingBy(CommentDO::getParentCommentId));
 
-    public static void scan(int maxX, int maxY, BiConsumer<Integer, Integer> consumer) {
-        for (int i = 0; i < maxX; i++) {
-            for (int j = 0; j < maxY; j++) {
-                consumer.accept(i, j);
-            }
+            // 打印分组结果
+            System.out.println("Grouped Comments:");
+            groupedComments.forEach((parentId, commentList) -> {
+                System.out.println("Parent ID " + parentId + ": " + commentList);
+            });
+
+            // 构建评论树：递归加载子评论
+            List<CommentDO> rootComments = groupedComments.get(0L); // 根评论的 parentId 是 0
+            loadReplies(rootComments, groupedComments);
+
+            // 打印完整的评论树
+            System.out.println("\nComplete Comment Tree:");
+            rootComments.forEach(System.out::println);
         }
-    }
 
-    public static <T> T scanReturn(int x, int y, ScanProcess<T> func) {
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
-                ImmutablePair<Boolean, T> ans = func.accept(i, j);
-                if (ans != null && ans.left) {
-                    return ans.right;
+        // 递归加载子评论
+        private static void loadReplies(List<CommentDO> comments, Map<Long, List<CommentDO>> groupedComments) {
+            for (CommentDO comment : comments) {
+                // 获取该评论的所有子评论
+                List<CommentDO> replies = groupedComments.get(comment.getId());
+                if (replies != null && !replies.isEmpty()) {
+                    comment.setReplies(replies);
+                    loadReplies(replies, groupedComments); // 递归加载子评论的子评论
                 }
             }
         }
-        return null;
+}
+class CommentDO {
+    Long id;
+    Long parentCommentId;
+    String content;
+    List<CommentDO> replies; // 子评论
+
+    public CommentDO(Long id, Long parentCommentId, String content) {
+        this.id = id;
+        this.parentCommentId = parentCommentId;
+        this.content = content;
+        this.replies = new ArrayList<>();
     }
 
-    @FunctionalInterface
-    public interface ScanProcess<T> {
-        ImmutablePair<Boolean, T> accept(int i, int j);
+    @Override
+    public String toString() {
+        return "CommentDO{id=" + id + ", content='" + content + "'}";
     }
-
-    public static <T> T scanReturn(int x, int y, ScanFunc<T> func) {
-        Ans<T> ans = new Ans<>();
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
-                func.accept(i, j, ans);
-                if (ans.tag) {
-                    return ans.ans;
-                }
-            }
-        }
-        return null;
-    }
-
-    public interface ScanFunc<T> {
-        void accept(int i, int j, Ans<T> ans);
-    }
-
-    public static class Ans<T> {
-        private T ans;
-        private boolean tag = false;
-
-        public Ans<T> setAns(T ans) {
-            tag = true;
-            this.ans = ans;
-            return this;
-        }
-
-        public T getAns() {
-            return ans;
-        }
-    }
-
-    @Test
-    public void testScan() {
-        int[][] cells = new int[][]{{1, 2, 3, 4}, {11, 12, 13, 14}, {21, 22, 23, 24}};
-        scan(cells.length, cells[0].length, (i, j) -> {
-            System.out.println(cells[i][j]);
-        });
-
-        String ans = scanReturn(cells.length, cells[0].length, (i, j) -> cells[i][j] % 2 == 0 ?
-                ImmutablePair.of(true, "\"index:\" " + i + " + \"_\" " + j + ";") :
-                null);
-        System.out.println(ans);
-    }
-
-    @Test
-    public void getEven() {
-        int[][] cells = new int[][]{{1, 2, 3, 4}, {11, 12, 13, 14}, {21, 22, 23, 24}};
-        String ans = scanReturn(cells.length, cells[0].length, (i, j, a) -> {
-            if ((cells[i][j] & 1) == 0) {
-                a.setAns(i + "_" + j);
-            }
-        });
-        System.out.println(ans);
-    }
-
-    public int tt(List<Integer> ans) {
-        try {
-            System.out.println("tt 开始执行!!!");
-            Thread.sleep(2000);
-            System.out.println("tt 结束了!");
-            ans.add(10);
-            return 10;
-        } catch (Exception e) {
-            e.printStackTrace();
-            ans.add(-1);
-            return -1;
-        }
-    }
-
-    @Test
-    public void futureTest() throws InterruptedException {
-        ExecutorService executorService = Executors.newFixedThreadPool(1);
-        List<Integer> list = new ArrayList<>();
-        Future<Integer> ans = executorService.submit(new Callable<Integer>() {
-            @Override
-            public Integer call() throws Exception {
-                return tt(list);
-            }
-        });
-        try {
-            ans.get(1, SECONDS);
-        } catch (TimeoutException e) {
-            System.out.println("超时异常了！");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        Thread.sleep(3000);
-        System.out.println("结束了!!!" + list);
-
-    }
+    public Long getId() { return id; }
+    public Long getParentCommentId() { return parentCommentId; }
+    public List<CommentDO> getReplies() { return replies; }
+    public void setReplies(List<CommentDO> replies) { this.replies = replies; }
 }

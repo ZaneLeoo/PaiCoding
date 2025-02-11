@@ -44,10 +44,9 @@ public interface UserService {
      * 获取登录的用户信息,并更行丢对应的ip信息
      *
      * @param session  用户会话
-     * @param clientIp 用户最新的登录ip
      * @return 返回用户基本信息
      */
-    BaseUserInfoDTO getAndUpdateUserIpInfoBySessionId(String session, String clientIp);
+    BaseUserInfoDTO getAndUpdateUserIpInfoBySessionId(String session);
 
     /**
      * 查询极简的用户信息
@@ -103,4 +102,6 @@ public interface UserService {
      * 绑定用户信息
      */
     void bindUserInfo(UserPwdLoginReq loginReq);
+
+
 }

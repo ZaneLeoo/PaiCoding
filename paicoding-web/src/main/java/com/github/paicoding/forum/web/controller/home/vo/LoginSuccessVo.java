@@ -15,4 +15,6 @@ import lombok.Data;
 public class LoginSuccessVo {
 
     String token;
+    Boolean isLogin;
+    String avatar;
 }

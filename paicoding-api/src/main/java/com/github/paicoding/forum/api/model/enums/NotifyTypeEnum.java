@@ -21,14 +21,7 @@ public enum NotifyTypeEnum {
     DELETE_REPLY(2, "删除回复"),
     CANCEL_PRAISE(3, "取消点赞"),
     CANCEL_COLLECT(4, "取消收藏"),
-    CANCEL_FOLLOW(5, "取消关注"),
-
-    // 注册、登录添加系统相关提示消息
-    REGISTER(6, "用户注册"),
-    BIND(6, "绑定星球"),
-    LOGIN(6, "用户登录"),
-    ;
-
+    CANCEL_FOLLOW(5, "取消关注");
 
     private int type;
     private String msg;

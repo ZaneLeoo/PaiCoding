@@ -5,10 +5,12 @@ import com.github.paicoding.forum.api.model.vo.ResVo;
 import com.github.paicoding.forum.api.model.vo.constants.StatusEnum;
 import com.github.paicoding.forum.api.model.vo.login.UserNamePasswordReq;
 import com.github.paicoding.forum.api.model.vo.user.UserPwdLoginReq;
+import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
 import com.github.paicoding.forum.core.permission.Permission;
 import com.github.paicoding.forum.core.permission.UserRole;
 import com.github.paicoding.forum.core.util.SessionUtil;
 import com.github.paicoding.forum.service.user.service.LoginService;
+import com.github.paicoding.forum.service.user.service.UserService;
 import com.github.paicoding.forum.web.controller.home.vo.LoginSuccessVo;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -32,51 +34,40 @@ public class LoginRestController {
     @Autowired
     private LoginService loginService;
 
-    /**
-     * 用户名和密码登录
-     * 可以根据星球编号/用户名进行密码匹配
-     */
-    @PostMapping("/login/username")
-    public ResVo<Boolean> login(@RequestParam(name = "username") String username,
-                                @RequestParam(name = "password") String password,
-                                HttpServletResponse response) {
-        String session = loginService.loginByUserPwd(username, password);
-        if (StringUtils.isNotBlank(session)) {
-            // cookie中写入用户登录信息，用于身份识别
-            response.addCookie(SessionUtil.newCookie(LoginService.SESSION_KEY, session));
-            return ResVo.ok(true);
-        } else {
-            return ResVo.fail(StatusEnum.LOGIN_FAILED_MIXED, "用户名和密码登录异常，请稍后重试");
-        }
-    }
+    @Autowired
+    private UserService userService;
 
     /**
      * 用户名和密码登录
      */
-    @PostMapping("/new/login/username")
+    @PostMapping("/login/username")
     public ResVo<LoginSuccessVo> loginByPassword(@RequestBody UserNamePasswordReq req,
                                                  HttpServletResponse response) {
         String session = loginService.loginByUserPwd(req.getUsername(), req.getPassword());
         if (StringUtils.isNotBlank(session)) {
+            BaseUserInfoDTO user = userService.getAndUpdateUserIpInfoBySessionId(session);
             // cookie中写入用户登录信息，用于身份识别
             Cookie cookie = SessionUtil.newCookie(LoginService.SESSION_KEY, session);
             response.addCookie(cookie);
-            return ResVo.ok(new LoginSuccessVo(cookie.getValue()));
+            Cookie avatar = SessionUtil.newCookie("avatar", user.getPhoto());
+            response.addCookie(avatar);
+            return ResVo.ok(new LoginSuccessVo(cookie.getValue(),true,user.getPhoto()));
         } else {
             return ResVo.fail(StatusEnum.LOGIN_FAILED_MIXED, "用户名和密码登录异常，请稍后重试");
         }
     }
 
-    /**
-     * 绑定星球账号
-     */
     @PostMapping("/login/register")
-    public ResVo<Boolean> register(UserPwdLoginReq loginReq,
+    public ResVo<Boolean> register(@RequestBody UserPwdLoginReq loginReq,
                                    HttpServletResponse response) {
+        // session 与 userId 为映射关系
         String session = loginService.registerByUserPwd(loginReq);
         if (StringUtils.isNotBlank(session)) {
             // cookie中写入用户登录信息，用于身份识别
+            BaseUserInfoDTO user = userService.getAndUpdateUserIpInfoBySessionId(session);
             response.addCookie(SessionUtil.newCookie(LoginService.SESSION_KEY, session));
+            Cookie avatar = SessionUtil.newCookie("avatar", user.getPhoto());
+            response.addCookie(avatar);
             return ResVo.ok(true);
         } else {
             return ResVo.fail(StatusEnum.LOGIN_FAILED_MIXED, "用户名和密码登录异常，请稍后重试");

@@ -2,27 +2,21 @@ package com.github.paicoding.forum.service.user.service.user;
 
 import com.github.paicoding.forum.api.model.context.ReqInfoContext;
 import com.github.paicoding.forum.api.model.exception.ExceptionUtil;
-import com.github.paicoding.forum.api.model.vo.article.dto.YearArticleDTO;
 import com.github.paicoding.forum.api.model.vo.constants.StatusEnum;
 import com.github.paicoding.forum.api.model.vo.user.UserInfoSaveReq;
 import com.github.paicoding.forum.api.model.vo.user.UserPwdLoginReq;
 import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.SimpleUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserStatisticInfoDTO;
-import com.github.paicoding.forum.core.util.IpUtil;
 import com.github.paicoding.forum.service.article.repository.dao.ArticleDao;
 import com.github.paicoding.forum.service.statistics.service.CountService;
 import com.github.paicoding.forum.service.user.cahce.UserInfoCacheManager;
 import com.github.paicoding.forum.service.user.converter.UserConverter;
-import com.github.paicoding.forum.service.user.repository.dao.UserAiDao;
 import com.github.paicoding.forum.service.user.repository.dao.UserDao;
 import com.github.paicoding.forum.service.user.repository.dao.UserRelationDao;
-import com.github.paicoding.forum.service.user.repository.entity.IpInfo;
-import com.github.paicoding.forum.service.user.repository.entity.UserAiDO;
 import com.github.paicoding.forum.service.user.repository.entity.UserDO;
 import com.github.paicoding.forum.service.user.repository.entity.UserInfoDO;
 import com.github.paicoding.forum.service.user.repository.entity.UserRelationDO;
-import com.github.paicoding.forum.service.user.service.UserAiService;
 import com.github.paicoding.forum.service.user.service.UserService;
 import com.github.paicoding.forum.service.user.service.help.UserPwdEncoder;
 import com.github.paicoding.forum.service.user.service.help.UserSessionHelper;
@@ -52,12 +46,8 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Resource
-    private UserAiDao userAiDao;
-
-    @Resource
     private UserRelationDao userRelationDao;
 
-    @Autowired
     private CountService countService;
 
     @Autowired
@@ -69,11 +59,13 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserPwdEncoder userPwdEncoder;
 
-    @Autowired
-    private UserAiService userAiService;
 
     @Autowired
     private UserInfoCacheManager userInfoCacheManager;
+
+    public void setCountService(CountService countService) {
+        this.countService = countService;
+    }
 
     @Override
     public UserDO getWxUser(String wxuuid) {
@@ -102,7 +94,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public BaseUserInfoDTO getAndUpdateUserIpInfoBySessionId(String session, String clientIp) {
+    public BaseUserInfoDTO getAndUpdateUserIpInfoBySessionId(String session) {
         if (StringUtils.isBlank(session)) {
             return null;
         }
@@ -117,23 +109,7 @@ public class UserServiceImpl implements UserService {
         if (user == null) {
             throw ExceptionUtil.of(StatusEnum.USER_NOT_EXISTS, "userId=" + userId);
         }
-
-        IpInfo ip = user.getIp();
-        if (clientIp != null && !Objects.equals(ip.getLatestIp(), clientIp)) {
-            // ip不同，需要更新
-            ip.setLatestIp(clientIp);
-            ip.setLatestRegion(IpUtil.getLocationByIp(clientIp).toRegionStr());
-
-            if (ip.getFirstIp() == null) {
-                ip.setFirstIp(clientIp);
-                ip.setFirstRegion(ip.getLatestRegion());
-            }
-            userDao.updateById(user);
-        }
-
-        // 查询 user_ai信息，标注用户是否为星球专属用户
-        UserAiDO userAiDO = userAiDao.getByUserId(userId);
-        return UserConverter.toDTO(user, userAiDO);
+        return UserConverter.toDTO(user);
     }
 
     @Override
@@ -199,8 +175,8 @@ public class UserServiceImpl implements UserService {
             userHomeDTO.setJoinDayCount(Math.max(1, joinDayCount));
 
             // 创作历程
-            List<YearArticleDTO> yearArticleDTOS = articleDao.listYearArticleByUserId(userId);
-            userHomeDTO.setYearArticleList(yearArticleDTOS);
+//            List<YearArticleDTO> yearArticleDTOS = articleDao.listYearArticleByUserId(userId);
+//            userHomeDTO.setYearArticleList(yearArticleDTOS);
 
             userInfoCacheManager.setUserInfo(userId, userHomeDTO);
         }
@@ -240,8 +216,5 @@ public class UserServiceImpl implements UserService {
         user.setUserName(loginReq.getUsername());
         user.setPassword(userPwdEncoder.encPwd(loginReq.getPassword()));
         userDao.saveUser(user);
-
-        // 2. 更新ai相关信息
-        userAiService.initOrUpdateAiInfo(loginReq);
     }
 }

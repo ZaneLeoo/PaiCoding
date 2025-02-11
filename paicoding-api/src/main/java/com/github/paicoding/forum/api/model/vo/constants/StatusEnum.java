@@ -24,7 +24,7 @@ import lombok.Getter;
  */
 @Getter
 public enum StatusEnum {
-    SUCCESS(0, "OK"),
+    SUCCESS(200, "OK"),
 
     // -------------------------------- 通用
 
@@ -53,6 +53,7 @@ public enum StatusEnum {
     ARTICLE_NOT_EXISTS(200_404_001, "文章不存在:%s"),
     COLUMN_NOT_EXISTS(200_404_002, "教程不存在:%s"),
     COLUMN_QUERY_ERROR(200_500_003, "教程查询异常:%s"),
+    ARTICLE_NOT_PUBLISH(200_500_004,"文章未发布"),
     // 教程文章已存在
     COLUMN_ARTICLE_EXISTS(200_500_004, "专栏教程已存在:%s"),
     ARTICLE_RELATION_TUTORIAL(200_500_006, "文章已被添加为教程:%s"),

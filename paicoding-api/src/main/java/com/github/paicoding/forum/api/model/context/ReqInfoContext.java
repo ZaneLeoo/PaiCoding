@@ -1,11 +1,8 @@
 package com.github.paicoding.forum.api.model.context;
 
 import com.alibaba.ttl.TransmittableThreadLocal;
-import com.github.paicoding.forum.api.model.vo.seo.Seo;
 import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
 import lombok.Data;
-
-import java.security.Principal;
 
 /**
  * 请求上下文，携带用户身份相关信息
@@ -29,35 +26,11 @@ public class ReqInfoContext {
     }
 
     @Data
-    public static class ReqInfo implements Principal {
-        /**
-         * appKey
-         */
-        private String appKey;
-        /**
-         * 访问的域名
-         */
-        private String host;
+    public static class ReqInfo {
         /**
          * 访问路径
          */
         private String path;
-        /**
-         * 客户端ip
-         */
-        private String clientIp;
-        /**
-         * referer
-         */
-        private String referer;
-        /**
-         * post 表单参数
-         */
-        private String payload;
-        /**
-         * 设备信息
-         */
-        private String userAgent;
 
         /**
          * 登录的会话
@@ -68,20 +41,23 @@ public class ReqInfoContext {
          * 用户id
          */
         private Long userId;
+
         /**
          * 用户信息
          */
         private BaseUserInfoDTO user;
+
         /**
          * 消息数量
          */
         private Integer msgNum;
 
-        private Seo seo;
-
+        /**
+         * 设备信息
+         */
         private String deviceId;
 
-        @Override
+
         public String getName() {
             return session;
         }

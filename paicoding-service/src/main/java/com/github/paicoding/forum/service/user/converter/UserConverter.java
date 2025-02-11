@@ -10,7 +10,6 @@ import com.github.paicoding.forum.api.model.vo.user.UserSaveReq;
 import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.SimpleUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserStatisticInfoDTO;
-import com.github.paicoding.forum.service.user.repository.entity.UserAiDO;
 import com.github.paicoding.forum.service.user.repository.entity.UserDO;
 import com.github.paicoding.forum.service.user.repository.entity.UserInfoDO;
 import com.github.paicoding.forum.service.user.repository.entity.UserRelationDO;
@@ -49,13 +48,7 @@ public class UserConverter {
         return userInfoDO;
     }
 
-    public static BaseUserInfoDTO toDTO(UserInfoDO info, UserAiDO userAiDO) {
-        BaseUserInfoDTO user = toDTO(info);
-        if (userAiDO != null) {
-            user.setStarStatus(UserAIStatEnum.fromCode(userAiDO.getState()));
-        }
-        return user;
-    }
+
 
     public static BaseUserInfoDTO toDTO(UserInfoDO info) {
         if (info == null) {
@@ -64,8 +57,6 @@ public class UserConverter {
         BaseUserInfoDTO user = new BaseUserInfoDTO();
         // todo 知识点，bean属性拷贝的几种方式， 直接get/set方式，使用BeanUtil工具类(spring, cglib, apache, objectMapper)，序列化方式等
         BeanUtils.copyProperties(info, user);
-        // 设置用户最新登录地理位置
-        user.setRegion(info.getIp().getLatestRegion());
         // 设置用户角色
         user.setRole(RoleEnum.role(info.getUserRole()));
         return user;
