@@ -1,59 +1,135 @@
 <template>
-  <footer class="footer-wrap">
-    <div class="foot">
-      <div>
-        <a class="text-reset" href="https://beian.miit.gov.cn" target="_blank">
-          <span>{{global.siteInfo.websiteRecord}}</span>
-        </a>
-        <a class="text-reset"
-           href="http://xuyifei.site"
-           target="_blank">
-          小灰灰
-          {{'© 2024-' + format(new Date(), 'yyyy') + ' 编程汇 '}}
-        </a>
-      </div>
-      <div class="stats-container">
-        <div class="stats-row">
-          本站总PV&nbsp;&nbsp;
-        <span class="visit_cnt">
-          {{global.siteStatisticInfo.pv}}
-        </span>
-          &nbsp;&nbsp;总UV&nbsp;&nbsp;
-        <span class="visit_cnt">
-          {{global.siteStatisticInfo.uv}}
-        </span>
+  <a-layout-footer class="custom-footer">
+    <div class="container">
+      <!-- 关注我们 -->
+      <a-col :xs="24" :sm="24" :md="24">
+        <div class="footer-section">
+          <h3 class="section-title">关注我们</h3>
+          <div class="social-links">
+            <a
+              v-for="social in socialLinks"
+              :key="social.icon"
+              :href="social.url"
+              :title="social.name"
+              target="_blank"
+              class="social-link"
+            >
+              <component
+                :is="social.icon"
+                :style="{ fontSize: '32px', color: social.color }"
+                class="social-icon"
+              />
+            </a>
+          </div>
         </div>
-        <div class="stats-row">
-          &nbsp;&nbsp;今日PV&nbsp;&nbsp;
-        <span class="visit_cnt">
-          {{global.todaySiteStatisticInfo.pv}}
-        </span>
-          &nbsp;&nbsp;UV&nbsp;&nbsp;
-        <span class="visit_cnt" >
-          {{global.todaySiteStatisticInfo.uv}}
-        </span>
-          &nbsp;&nbsp;此时&nbsp;&nbsp;<span class="visit_cnt">{{global.onlineCnt}}</span>&nbsp;&nbsp;人在线
-        </div>
-      </div>
+      </a-col>
     </div>
-  </footer>
+  </a-layout-footer>
 </template>
 
-<script setup lang="ts">
+<script>
+// 按需引入图标
+import {
+  GithubOutlined,
+  WechatOutlined,
+  FacebookOutlined,
+  InstagramOutlined,
+  MailOutlined
+} from '@ant-design/icons-vue'
 
-import { format }  from 'date-fns'
-import { useGlobalStore } from '@/stores/global'
-const globalStore = useGlobalStore()
+export default {
+  components: {
+    GithubOutlined,
+    WechatOutlined,
+    FacebookOutlined,
+    InstagramOutlined,
+    MailOutlined
+  },
 
-const global = globalStore.global
+  data() {
+    return {
+      socialLinks: [
+        {
+          name: 'GitHub',
+          icon: 'GithubOutlined',
+          url: 'https://github.com',
+          color: '#333'
+        },
+        {
+          name: '微信',
+          icon: 'WechatOutlined',
+          url: '#wechat',
+          color: '#09b63d'
+        },
+        {
+          name: '小红书',
+          icon: 'FacebookOutlined',
+          url: 'https://www.xiaohongshu.com',
+          color: '#f72585'
+        },
+        {
+          name: '抖音',
+          icon: 'InstagramOutlined',
+          url: 'https://www.douyin.com',
+          color: '#00c2e8'
+        },
+        {
+          name: 'Gmail',
+          icon: 'MailOutlined',
+          url: 'https://mail.google.com',
+          color: '#ea4335'
+        }
+      ]
+    }
+  }
+}
 </script>
 
-
 <style scoped>
-
-.footer-wrap{
-  width: 100%;
-  height: var(--footer-height);
+.custom-footer {
+  background-color: #fff; /* 设置背景为白色 */
+  padding: 48px 0;
+  color: rgba(0, 0, 0, 0.65);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  font-size: 36px;
+  transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
 </style>

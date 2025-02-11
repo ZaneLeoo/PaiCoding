@@ -1,66 +1,49 @@
 // ============= 后端请求的地址 =============
 // 后端接口地址
 
-// export const BASE_URL = "https://www.xuyifei.site/api"
-// export const WS_URL = "ws://www.xuyifei.site/api"
-export const EXCEL_PROCESS_BASE_URL = 'https://www.xuyifei.site:5000'
-
-//
+// 基础接口地址
 export const BASE_URL = 'http://localhost:8080'
-export const WS_URL = 'ws://localhost:8080'
-
-// 获得global信息还有siteInfo信息
-export const INDEX_URL = '/index'
-
+// 注册
+export const REGISTER_URL = BASE_URL + '/login/register'
 // 用户名密码登录
-export const LOGIN_USER_NAME_URL = '/new/login/username'
+export const LOGIN_USER_NAME_URL = '/login/username'
 // 退出登录
-export const LOGOUT_URL = '/logout'
+export const LOGOUT_URL = BASE_URL + '/logout'
 
-// 随机用户登录，需要模拟微信公众号平台给后端发请求的地址
-export const MOCK_LOGIN_URL = '/wx/callback'
-
-// 获取指定文章的详情
-export const ARTICLE_DETAIL_URL = 'article/api/data/detail'
+// 查看指定文章
+export const ARTICLE_URL = BASE_URL + '/article/api/get'
+export const ARTICLE_STATUS_URL = BASE_URL + '/article/api/status'
 
 // 获取文章对应的专栏信息
 export const ARTICLE_COLUMN_RELATION_URL = 'column/api/article'
 
 // 文章点赞、收藏
-export const ARTICLE_LIKE_COLLECT_URL = 'article/api/favor'
+export const OPERATE_URL = BASE_URL + '/user/api/operate'
 
 // 评论点赞
 export const COMMENT_LIKE_URL = 'comment/api/favor'
 
 // 提交评论
-export const COMMENT_SUBMIT_URL = 'comment/api/save'
+export const COMMENT_SUBMIT_URL = BASE_URL + '/comment/api/add'
 
 // ############# 首页相关的请求 #############
 // 获取指定category下的文章列表
 export const CATEGORY_ARTICLE_LIST_URL = 'article/api/articles/category'
 
-// ############# column专栏相关的请求 #############
-// 获取专栏列表，这里用/home是兼容管理系统中的代码
-export const COLUMN_LIST_URL = 'column/api/home'
-
-// 获取专栏文章详情，后面要加上专栏id和文章id如：/column/api/1/1
-export const COLUMN_DETAIL_URL = 'column/api'
-
 // ############# 文章分类相关的请求 #############
-// 获取文章分类列表
-export const CATEGORY_LIST_URL = '/api/category/list/all'
+// 获取分类列表
 
 // ############# 文章标签相关的请求 #############
 // 获取文章标签列表(未被标记为删除的)
-export const TAG_LIST_URL = '/api/tag/list/all'
+export const TAG_LIST_URL = BASE_URL + '/api/tag/all'
 // 获取指定category下的 tags
 export const ARTICLE_TAGS_URL = '/api/tag/list/category'
 
 // ############# 文章相关的请求 #############
 // 上传图片
-export const FILE_UPLOAD_URL = '/image/upload'
+export const FILE_UPLOAD_URL = BASE_URL + '/image/upload'
 // 上传/更新文章
-export const ARTICLE_UPLOAD_URL = '/article/api/post'
+export const ARTICLE_UPLOAD_URL = BASE_URL + '/article/api/save'
 // 更新（编辑）文章时获取的文章详情
 export const ARTICLE_EDIT_URL = '/article/api/update'
 // 删除文章
